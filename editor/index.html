@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="theme-color" content="#f5faf9" data-theme-color>
+    <title>维护者内容编辑器 · HiFi 交易事件簿</title>
+    <script>document.documentElement.dataset.theme=localStorage.getItem("hifi-theme")||((matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light");</script>
+    <link rel="stylesheet" href="../assets/styles.css">
+    <link rel="stylesheet" href="../assets/editor.css">
+  </head>
+  <body class="editor-body" data-page="editor" data-root="../">
+    <header class="editor-header">
+      <a class="brand" href="../index.html">
+        <span class="brand-mark" aria-hidden="true"><i></i></span>
+        <span><strong>维护者内容编辑器</strong><small>LOCAL WORKSPACE · NO DIRECT PUBLISH</small></span>
+      </a>
+      <div class="header-actions">
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="切换深色模式"><span aria-hidden="true">◐</span><span data-theme-label>深色</span></button>
+        <a class="quiet-link" href="../index.html">查看正式网站</a>
+      </div>
+    </header>
+
+    <noscript><p class="fatal-note">编辑器需要启用 JavaScript。</p></noscript>
+
+    <div class="editor-status" data-editor-status>
+      <div class="status-step is-current" data-status-step="draft"><span>1</span><strong>本地草稿</strong><small>保存在当前浏览器</small></div>
+      <div class="status-step" data-status-step="exported"><span>2</span><strong>已导出</strong><small>尚未发布</small></div>
+      <div class="status-step" data-status-step="published"><span>3</span><strong>已发布</strong><small>仅在 GitHub 提交后确认</small></div>
+    </div>
+
+    <div class="editor-alert" data-alert role="status" aria-live="polite">正在读取当前网站数据…</div>
+
+    <main class="editor-layout" data-editor-root hidden>
+      <aside class="editor-sidebar">
+        <section class="sidebar-card">
+          <div class="sidebar-heading">
+            <div><p class="eyebrow">记录</p><h1>事件列表</h1></div>
+            <button class="icon-button" type="button" data-new-event>新增</button>
+          </div>
+          <p class="sidebar-help">拖动顺序可用上下按钮调整。草稿和已撤下记录不会显示在正式网站。</p>
+          <div class="event-admin-list" data-admin-list></div>
+        </section>
+
+        <section class="sidebar-card data-tools">
+          <p class="eyebrow">数据读写</p>
+          <h2>导入与草稿</h2>
+          <button class="editor-button secondary" type="button" data-save-draft>保存浏览器草稿</button>
+          <button class="editor-button secondary" type="button" data-restore-draft>恢复浏览器草稿</button>
+          <label class="editor-button secondary file-button">导入本地数据文件<input type="file" accept="application/json,.json" data-import-json></label>
+          <button class="text-button" type="button" data-reload-published>重新读取网站已发布数据</button>
+          <p class="microcopy">载入失败不会清空当前内容。本地草稿不是唯一备份，请及时导出。</p>
+        </section>
+
+        <details class="sidebar-card document-import" data-import-panel>
+          <summary>离线导入文字文档</summary>
+          <p class="microcopy">选择文件后在当前浏览器解析原文。这里生成的是“候选记录”，不是人物去重：一条记录里出现多个账号会先保留在同一条原文中，账号关联需要你手动确认。原文仅供核对，不写入网站 JSON 或导出包。支持 DOCX、TXT、Markdown。</p>
+          <label class="editor-button secondary file-button">选择文档<input type="file" accept=".docx,.txt,.md,application/vnd.openxmlformats-officedocument.wordprocessingml.document,text/plain,text/markdown" data-import-document></label>
+          <p class="microcopy" data-import-status>尚未选择文档。</p>
+          <div class="import-candidates" data-import-candidates></div>
+        </details>
+      </aside>
+
+      <section class="editor-main">
+        <section class="import-source-panel" data-import-source hidden>
+          <div><strong>当前事件对应的导入原文</strong><small>仅在此浏览器会话中查看；请核对、去敏后再把必要内容写入事件字段。</small></div>
+          <pre data-import-source-text></pre>
+        </section>
+        <details class="settings-panel">
+          <summary>站点名称、说明和投稿入口</summary>
+          <div class="form-grid settings-grid" data-site-settings>
+            <label class="field span-2"><span>网站名称</span><input name="site.name" type="text"></label>
+            <label class="field span-2"><span>简短介绍</span><textarea name="site.intro" rows="3"></textarea></label>
+            <label class="field span-2"><span>列表来源说明</span><textarea name="site.sourceNotice" rows="2"></textarea></label>
+            <label class="field"><span>最近更新日期</span><input name="site.lastUpdated" type="date"></label>
+            <label class="field checkbox-field"><input name="isDemo" type="checkbox"><span>当前数据仅为虚构演示</span></label>
+            <label class="field"><span>贴吧个人主页链接</span><input name="site.submissions.privateMessage.url" type="url" placeholder="https://tieba.baidu.com/home/main?id=..."></label>
+            <label class="field"><span>提示文字</span><input name="site.submissions.privateMessage.hint" type="text" value="前往主页向我发送私信。"></label>
+            <label class="field"><span>官方水楼具体帖子链接</span><input name="site.submissions.waterPost.url" type="url" placeholder="https://tieba.baidu.com/p/..."></label>
+            <label class="field"><span>提示文字</span><input name="site.submissions.waterPost.hint" type="text" value="在水楼公开回复，提交事件和材料。"></label>
+          </div>
+        </details>
+
+        <form class="event-form" data-event-form>
+          <div class="form-toolbar">
+            <div>
+              <p class="eyebrow">正在编辑</p>
+              <h2 data-form-title>选择一条记录</h2>
+              <p class="event-id-line">稳定事件标识 <code data-event-id>—</code></p>
+            </div>
+            <div class="toolbar-actions">
+              <button class="editor-button secondary" type="button" data-preview>预览事件</button>
+              <button class="editor-button danger-text" type="button" data-withdraw>撤下记录</button>
+              <button class="editor-button danger-text" type="button" data-delete-event>删除记录</button>
+            </div>
+          </div>
+
+          <fieldset>
+            <legend>基本信息</legend>
+            <div class="form-grid">
+              <label class="field span-2"><span>标题</span><input name="title" type="text" required></label>
+              <label class="field"><span>公开状态</span><select name="status"><option value="draft">草稿</option><option value="published">公开展示</option><option value="withdrawn">已撤下</option></select></label>
+              <label class="field"><span>事件日期</span><input name="eventDate" type="date"></label>
+              <label class="field"><span>更新时间</span><input name="updatedAt" type="date"></label>
+              <label class="field"><span>当前情况</span><input name="currentStatus" type="text"></label>
+              <label class="field span-2"><span>首页摘要</span><textarea name="summary" rows="4"></textarea></label>
+              <label class="field span-2"><span>投稿者陈述与完整经过</span><textarea name="narrative" rows="10"></textarea><small>区分投稿者陈述、可核对材料和你的推断；没有的内容不要补写。</small></label>
+              <label class="field"><span>挂牌价</span><input name="listingPrice" type="text" placeholder="如：¥1,680"></label>
+              <label class="field"><span>实际成交价</span><input name="transactionPrice" type="text" placeholder="如：¥1,550 或 未提供"></label>
+              <label class="field span-2"><span>补充或更正说明</span><textarea name="correctionNotice" rows="3"></textarea></label>
+              <label class="field span-2"><span>撤回说明</span><textarea name="withdrawalNotice" rows="3"></textarea></label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>公开账号</legend>
+            <p class="fieldset-help">每个平台分别填写，不要因为昵称相同自动认定为同一人。</p>
+            <div class="repeater" data-repeater="accounts"></div>
+            <button class="add-row" type="button" data-add-row="accounts">添加账号</button>
+          </fieldset>
+
+          <fieldset>
+            <legend>相关设备</legend>
+            <div class="repeater" data-repeater="devices"></div>
+            <button class="add-row" type="button" data-add-row="devices">添加设备</button>
+          </fieldset>
+
+          <fieldset>
+            <legend>材料与图片</legend>
+            <p class="fieldset-help">图片会导出到 <code>assets/images/events/事件标识/</code>。请先在原文件中永久遮挡手机号、地址、订单号等敏感信息；网页样式遮挡不算去敏。</p>
+            <label class="image-picker">选择图片并加入当前事件<input type="file" accept="image/png,image/jpeg,image/webp,image/gif,image/svg+xml" multiple data-image-input></label>
+            <div class="repeater material-repeater" data-repeater="materials"></div>
+            <button class="add-row" type="button" data-add-row="materials">添加链接或材料</button>
+          </fieldset>
+
+          <fieldset>
+            <legend>当事人回应</legend>
+            <div class="repeater" data-repeater="responses"></div>
+            <button class="add-row" type="button" data-add-row="responses">添加回应</button>
+          </fieldset>
+
+          <fieldset>
+            <legend>后续更新</legend>
+            <div class="repeater" data-repeater="updates"></div>
+            <button class="add-row" type="button" data-add-row="updates">添加更新</button>
+          </fieldset>
+
+          <fieldset>
+            <legend>投稿者的心情</legend>
+            <p class="fieldset-help">YouTube 和哔哩哔哩会按链接生成官方播放器；其他来源只显示原站链接。任何平台都不会自动播放。</p>
+            <div class="form-grid">
+              <label class="field"><span>作品名称</span><input name="mood.title" type="text"></label>
+              <label class="field"><span>平台</span><select name="mood.platform"><option value="">未设置</option><option value="youtube">YouTube</option><option value="bilibili">哔哩哔哩</option><option value="other">其他平台</option></select></label>
+              <label class="field span-2"><span>一句话心情说明</span><input name="mood.note" type="text"></label>
+              <label class="field span-2"><span>媒体原站链接</span><input name="mood.url" type="url"></label>
+              <label class="field"><span>推荐起播时间（秒）</span><input name="mood.startSeconds" type="number" min="0" step="1"></label>
+              <label class="field"><span>备用链接</span><input name="mood.backupUrl" type="url"></label>
+            </div>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+
+    <div class="export-bar" data-export-bar hidden>
+      <div><strong data-export-summary>有尚未导出的修改</strong><small>导出不会自动发布到 GitHub Pages。</small></div>
+      <button class="editor-button secondary" type="button" data-save-draft>保存草稿</button>
+      <button class="editor-button" type="button" data-export>导出更新文件</button>
+      <button class="text-button" type="button" data-confirm-published>我已在 GitHub 提交</button>
+    </div>
+
+    <dialog class="preview-dialog" data-preview-dialog>
+      <div class="preview-topbar"><strong>正式网站样式预览</strong><button type="button" data-close-preview>关闭</button></div>
+      <div class="preview-canvas"><main class="detail-shell shell" data-preview-canvas></main></div>
+    </dialog>
+
+    <dialog class="editor-lightbox" data-editor-lightbox>
+      <button type="button" data-close-editor-lightbox>关闭</button>
+      <img alt="图片预览">
+      <p></p>
+    </dialog>
+
+    <div class="toast" data-toast role="status" aria-live="polite"></div>
+    <script src="../assets/app.js" defer></script>
+    <script src="../assets/vendor/jszip.min.js" defer></script>
+    <script src="../assets/document-import.js" defer></script>
+    <script src="../assets/editor.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="面向贴吧 HiFi 社区的交易事件资料展示站。">
+    <meta name="theme-color" content="#f5faf9" data-theme-color>
+    <title>HiFi 交易事件簿</title>
+    <script>document.documentElement.dataset.theme=localStorage.getItem("hifi-theme")||((matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light");</script>
+    <link rel="stylesheet" href="assets/styles.css">
+  </head>
+  <body data-page="home" data-root="">
+    <a class="skip-link" href="#event-list">跳到事件列表</a>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="返回首页">
+        <span class="brand-mark" aria-hidden="true"><i></i></span>
+        <span><strong data-site-name>HiFi 交易事件簿</strong><small>COMMUNITY RECORDS · SIDE A</small></span>
+      </a>
+      <div class="header-actions">
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="切换深色模式"><span aria-hidden="true">◐</span><span data-theme-label>深色</span></button>
+        <a class="quiet-link" href="editor/">维护者编辑器</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero shell" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">社区交易记录</p>
+          <h1 id="hero-title" data-site-name>HiFi 交易事件簿</h1>
+          <p class="lede" data-site-intro>整理社区交易事件的公开陈述与可核对材料。记录不是裁决，请结合原始来源独立判断。</p>
+          <p class="updated-line">最近更新 <time data-last-updated>读取中…</time></p>
+        </div>
+        <figure class="reference-art">
+          <img src="assets/images/brand/hifi-forum-icon.png" alt="青绿色头戴式耳机与 Hi-Fi Trading Forum 字样" width="1490" height="1492">
+        </figure>
+      </section>
+
+      <section class="submit-strip shell" aria-labelledby="submit-title">
+        <div>
+          <h2 id="submit-title">补充材料</h2>
+        </div>
+        <div class="submit-actions" data-submit-actions></div>
+      </section>
+
+      <section class="list-section shell" aria-labelledby="list-title">
+        <div class="section-heading">
+          <div>
+            <h2 id="list-title">事件列表</h2>
+          </div>
+          <p class="result-count" data-result-count aria-live="polite"></p>
+        </div>
+        <div class="notice demo-notice" data-demo-notice hidden>
+          <strong>当前仅有虚构演示数据</strong>
+          <span>用于检查版式和交互，不对应任何真实账号、交易、投稿或指控。</span>
+        </div>
+        <label class="search-field"><span>搜索事件</span><input type="search" data-event-search placeholder="输入账号、设备或经过关键词" autocomplete="off" aria-controls="event-list"></label>
+        <div id="event-list" class="event-grid" data-event-list aria-busy="true"></div>
+        <div class="empty-state" data-empty-state hidden>
+          <h3 data-empty-title>暂时没有公开事件</h3>
+          <p data-empty-description>撤下或草稿记录不会出现在这里。</p>
+        </div>
+        <p class="source-notice" data-source-notice hidden></p>
+      </section>
+
+      <figure class="visual-bar shell" aria-label="戴耳机的女孩走在田野小路上的横幅插画">
+        <img src="assets/images/brand/listening-bar-day.webp" alt="戴耳机的女孩走在明亮田野小路上" width="1536" height="512">
+        <figcaption><strong>LISTENING WINDOW</strong><span>让材料保持清晰，也给阅读留一点呼吸。</span></figcaption>
+      </figure>
+    </main>
+
+    <footer class="site-footer shell">
+      <p>公开账号仅按原材料分别记录，不自动推断跨平台身份关联。</p>
+      <p><a href="editor/">打开维护者编辑器</a> · 本站为静态页面，公众访问编辑页也无法修改线上内容。</p>
+    </footer>
+
+    <div class="toast" data-toast role="status" aria-live="polite"></div>
+    <script src="assets/app.js" defer></script>
+  </body>
+</html>

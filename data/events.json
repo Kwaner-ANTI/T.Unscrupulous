@@ -1,0 +1,1642 @@
+{
+  "schemaVersion": 1,
+  "isDemo": false,
+  "site": {
+    "name": "HiFi 交易事件簿",
+    "intro": "谁是倒狗？到手刀？挂挂挂挂挂挂挂",
+    "sourceNotice": "",
+    "lastUpdated": "2026-10-26",
+    "submissions": {
+      "privateMessage": {
+        "url": "https://tieba.baidu.com/home/main?id=tb.1.f088b50.kW4CbR_LLI5-nTNT7VtMqA",
+        "label": "私信投稿",
+        "hint": "前往主页向我发送私信。"
+      },
+      "waterPost": {
+        "url": "https://tieba.baidu.com/p/9537792651?",
+        "label": "水楼投稿",
+        "hint": "在水楼公开回复，提交事件和材料。"
+      }
+    }
+  },
+  "events": [
+    {
+      "id": "source-list-001",
+      "status": "published",
+      "order": 10,
+      "title": "追求者HIFI小店｜二手设备售后凭证认定争议",
+      "accounts": [
+        {
+          "displayName": "追求者HIFI小店",
+          "platform": "淘宝店铺（名单标注）",
+          "profileUrl": ""
+        }
+      ],
+      "devices": [
+        "大乌2"
+      ],
+      "eventDate": "2026-03-29",
+      "summary": "名单称买方委托朋友购买大乌2，运输后包装进水；店铺在售后沟通中要求订单记录，不接受其他收据。",
+      "narrative": "原始名单陈述（已去除公开不必要的直接身份信息，待补材料核对）：\n\n追求者HIFI小店  2026-3-29\n二手拒保（多次）\n1、事主委托朋友代买大乌2，到货快递进水，事主找售后，此店只认订单记录不认任何收据，甚至在淘宝店铺层次上就拉黑事主",
+      "listingPrice": "",
+      "transactionPrice": "",
+      "materials": [
+        {
+          "type": "link",
+          "title": "原始名单文字（待补公开来源）",
+          "description": "依据维护者提供的四页 DOCX 名单整理；文档未附截图、原帖链接或具体水楼楼层。此处仅记录其陈述，尚不能独立核对。",
+          "path": "",
+          "sourceUrl": "",
+          "waterPostUrl": ""
+        }
+      ],
+      "responses": [],
+      "updates": [],
+      "currentStatus": "待补公开材料和另一方回应。",
+      "updatedAt": "2026-10-26",
+      "correctionNotice": "",
+      "withdrawalNotice": "",
+      "mood": null
+    },
+    {
+      "id": "source-list-002",
+      "status": "published",
+      "order": 20,
+      "title": "Leaf Audio 叶音｜二手保修口径与公开言论争议",
+      "accounts": [
+        {
+          "displayName": "Leaf Audio 叶音",
+          "platform": "平台待核实",
+          "profileUrl": ""
+        }
+      ],
+      "devices": [],
+      "eventDate": "",
+      "summary": "名单写明二手拒保的疑问已暂时解除，另对店铺主理人与群管理的公开言论表达异议。此条未提供具体交易材料。",
+      "narrative": "原始名单陈述（已去除公开不必要的直接身份信息，待补材料核对）：\n\nLeaf Audio 叶音\n虽然二手拒保疑云暂除，不过翻阅过往记录，依然可见其主理人、 粉丝群管理员热衷畜牧：没消费满1w不算粉丝、收二手的多数是爱占小便宜，纠结、不够爽快的人、他家的东西没有不好，只是消费者不会搭配等等神论迭出",
+      "listingPrice": "",
+      "transactionPrice": "",
+      "materials": [
+        {
+          "type": "link",
+          "title": "原始名单文字（待补公开来源）",
+          "description": "依据维护者提供的四页 DOCX 名单整理；文档未附截图、原帖链接或具体水楼楼层。此处仅记录其陈述，尚不能独立核对。",
+          "path": "",
+          "sourceUrl": "",
+          "waterPostUrl": ""
+        }
+      ],
+      "responses": [],
+      "updates": [],
+      "currentStatus": "待补公开材料和另一方回应。",
+      "updatedAt": "2026-10-26",
+      "correctionNotice": "",
+      "withdrawalNotice": "",
+      "mood": null
+    },
+    {
+      "id": "source-list-003",
+      "status": "published",
+      "order": 30,
+      "title": "卡卡得拉谁｜购入后转售及瑕疵沟通争议",
+      "accounts": [
+        {
+          "displayName": "卡卡得拉谁",
+          "platform": "平台待核实",
+          "profileUrl": ""
+        }
+      ],
+      "devices": [
+        "封闭乌",
+        "K701"
+      ],
+      "eventDate": "",
+      "summary": "名单称该昵称购入两件设备后在闲鱼转售，原卖家发现后，双方就商品瑕疵说明发生争执。转售行为本身不等于欺骗。",
+      "narrative": "原始名单陈述（已去除公开不必要的直接身份信息，待补材料核对）：\n\n卡卡得拉谁、闽南华丽的水母眼虫、贴吧名：原神*! [数字账号ID已去除]\n倒狗，吧里1k收了事主封闭乌和k701，转头就闲鱼上倒卖，被事主发现后，开始反咬事主隐瞒瑕疵，撒泼打滚，狗叫禁止倒卖是村规等行为",
+      "listingPrice": "",
+      "transactionPrice": "",
+      "materials": [
+        {
+          "type": "link",
+          "title": "原始名单文字（待补公开来源）",
+          "description": "依据维护者提供的四页 DOCX 名单整理；文档未附截图、原帖链接或具体水楼楼层。此处仅记录其陈述，尚不能独立核对。",
+          "path": "",
+          "sourceUrl": "",
+          "waterPostUrl": ""
+        }
+      ],
+      "responses": [],
+      "updates": [],
+      "currentStatus": "待补公开材料和另一方回应。",
+      "updatedAt": "2026-10-26",
+      "correctionNotice": "",
+      "withdrawalNotice": "",
+      "mood": null
+    },
+    {
+      "id": "source-list-004",
+      "status": "published",
+      "order": 40,
+      "title": "kyoka123｜耳机转售价格记录",
+      "accounts": [
+        {
+          "displayName": "kyoka123",
+          "platform": "平台待核实",
+          "profileUrl": ""
+        }
+      ],
+      "devices": [
+        "N5005"
+      ],
+      "eventDate": "2026-03-24",
+      "summary": "名单称投稿者以700元卖出N5005，后来看到898元的转售标价。未提供后续实际成交信息。",
+      "narrative": "原始名单陈述（已去除公开不必要的直接身份信息，待补材料核对）：\n\nkyoka123、猪猪出奇迹  IP属地[已去除]    2026-3-24\n倒狗，事主700出N5005，转头倒了898",
+      "listingPrice": "后续转售标价约898元（名单陈述）",
+      "transactionPrice": "原交易价约700元（名单陈述）",
+      "materials": [
+        {
+          "type": "link",
+          "title": "原始名单文字（待补公开来源）",
+          "description": "依据维护者提供的四页 DOCX 名单整理；文档未附截图、原帖链接或具体水楼楼层。此处仅记录其陈述，尚不能独立核对。",
+          "path": "",
+          "sourceUrl": "",
+          "waterPostUrl": ""
+        }
+      ],
+      "responses": [],
+      "updates": [],
+      "currentStatus": "待补公开材料和另一方回应。",
+      "updatedAt": "2026-10-26",
+      "correctionNotice": "",
+      "withdrawalNotice": "",
+      "mood": null
+    },
+    {
+      "id": "source-list-005",
+      "status": "published",
+      "order": 50,
+      "title": "佳名线材｜线材成色描述争议",
+      "accounts": [
+        {
+          "displayName": "佳名线材",
+          "platform": "平台待核实",
+          "profileUrl": ""
+        }
+      ],
+      "devices": [
+        "线材"
+      ],
+      "eventDate": "2026-03-21",
+      "summary": "名单称买方以1500元购入标注95新的线材，到手后认为插头、热缩管和外壳存在与描述不符的痕迹；未附商品页和到手照片。",
+      "narrative": "原始名单陈述（已去除公开不必要的直接身份信息，待补材料核对）：\n\n佳名线材 （满**家）2026-03-21\n以次充新诈骗犯，事主1500拍下贱畜声称95新的线材，到手发现插头松动、磨损生锈、热缩管掉字、贴纸破损、塑料壳划痕一堆问题，贱畜耍无赖，吃准事主一时疏忽没有录开箱视频得逞",
+      "listingPrice": "",
+      "transactionPrice": "购入价约1500元（名单陈述）",
+      "materials": [
+        {
+          "type": "link",
+          "title": "原始名单文字（待补公开来源）",
+          "description": "依据维护者提供的四页 DOCX 名单整理；文档未附截图、原帖链接或具体水楼楼层。此处仅记录其陈述，尚不能独立核对。",
+          "path": "",
+          "sourceUrl": "",
+          "waterPostUrl": ""
+        }
+      ],
+      "responses": [],
+      "updates": [],
+      "currentStatus": "待补公开材料和另一方回应。",
+      "updatedAt": "2026-10-26",
+      "correctionNotice": "",
+      "withdrawalNotice": "",
+      "mood": null
+    },
+    {
+      "id": "source-list-006",
+      "status": "published",
+      "order": 60,
+      "title": "玫瑰戒指｜尚未收货时出现转售挂牌",
+      "accounts": [
+        {
+          "displayName": "玫瑰戒指",
+          "platform": "平台待核实",
+          "profileUrl": ""
+        }
+      ],
+      "devices": [
+        "迷姬"
+      ],
+      "eventDate": "2026-03-20",
+      "summary": "名单称该昵称以860元购入设备，收货前出现999元的转售挂牌，随后双方停止沟通。999元为挂牌价，非已核实成交价。",
+      "narrative": "原始名单陈述（已去除公开不必要的直接身份信息，待补材料核对）：\n\n玫瑰戒指  2026-03-20\n倒狗，860收事主迷姬，还未收货，转手就挂999卖，并拉黑事主",
+      "listingPrice": "后续挂牌价约999元（名单陈述）",
+      "transactionPrice": "原交易价约860元（名单陈述）",
+      "materials": [
+        {
+          "type": "link",
+          "title": "原始名单文字（待补公开来源）",
+          "description": "依据维护者提供的四页 DOCX 名单整理；文档未附截图、原帖链接或具体水楼楼层。此处仅记录其陈述，尚不能独立核对。",
+          "path": "",
+          "sourceUrl": "",
+          "waterPostUrl": ""
+        }
+      ],
+      "responses": [],
+      "updates": [],
+      "currentStatus": "待补公开材料和另一方回应。",
+      "updatedAt": "2026-10-26",
+      "correctionNotice": "",
+      "withdrawalNotice": "",
+      "mood": null
+    },
+    {
+      "id": "source-list-007",
+      "status": "published",
+      "order": 70,
+      "title": "水星沉著的娃娃｜转售标价与设备成色描述争议",
+      "accounts": [
+        {
+          "displayName": "水星沉著的娃娃",
+          "platform": "平台待核实",
+          "profileUrl": ""
+        }
+      ],
+      "devices": [
+        "FE silver",
+        "334P及耳机线"
+      ],
+      "eventDate": "2026-03-18",
+      "summary": "名单称FE silver由原卖家以3600元转出，后来出现5800元挂牌；另提到插针、插头与组合配件描述争议。各项说法尚无原帖或图片可核对。",
+      "narrative": "原始名单陈述（已去除公开不必要的直接身份信息，待补材料核对）：\n\n水星沉著的娃娃、 水星沉著的娃娃分身   2026-03-18\n贱畜rank，倒狗+诈骗犯，事主3600吧内收FE silver，同价+打包2线出于本地烧友。贱畜倒到后就挂5800并谎报成色，007插针开片且接触不良、插头掉镀、本体母座变形；\n贱畜334p+006当作金P全套卖，单出008；334搭复刻005当作正版005卖",
+      "listingPrice": "后续挂牌价约5800元（名单陈述）",
+      "transactionPrice": "原交易价约3600元（名单陈述）",
+      "materials": [
+        {
+          "type": "link",
+          "title": "原始名单文字（待补公开来源）",
+          "description": "依据维护者提供的四页 DOCX 名单整理；文档未附截图、原帖链接或具体水楼楼层。此处仅记录其陈述，尚不能独立核对。",
+          "path": "",
+          "sourceUrl": "",
+          "waterPostUrl": ""
+        }
+      ],
+      "responses": [],
+      "updates": [],
+      "currentStatus": "待补公开材料和另一方回应。",
+      "updatedAt": "2026-10-26",
+      "correctionNotice": "",
+      "withdrawalNotice": "",
+      "mood": null
+    },
+    {
+      "id": "source-list-008",
+      "status": "published",
+      "order": 80,
+      "title": "镜川先生｜原线是否随设备出售的争议",
+      "accounts": [
+        {
+          "displayName": "镜川先生",
+          "platform": "平台待核实",
+          "profileUrl": ""
+        }
+      ],
+      "devices": [
+        "耳机原线"
+      ],
+      "eventDate": "2026-03-18",
+      "summary": "名单称该卖家出售耳机时将原线单独计价，并对其他卖家的定价提出建议。未附具体商品页或沟通记录。",
+      "narrative": "原始名单陈述（已去除公开不必要的直接身份信息，待补材料核对）：\n\n镜川先生（大**叔）微信联系方式[已去除] IP属地[已去除]  福州阿美咔叽风 艾利和AK100忠粉 [个人背景信息已去除] [个人背景信息已去除]   2026-03-18\n贱畜rank，无良炒价贱畜，卖耳机默认不给原线（贱畜自定的规矩），25的原线也要单独卖，见到个人卖家卖便宜了，还会私信他人（吧主）建议联合升价，炒高市场价",
+      "listingPrice": "",
+      "transactionPrice": "",
+      "materials": [
+        {
+          "type": "link",
+          "title": "原始名单文字（待补公开来源）",
+          "description": "依据维护者提供的四页 DOCX 名单整理；文档未附截图、原帖链接或具体水楼楼层。此处仅记录其陈述，尚不能独立核对。",
+          "path": "",
+          "sourceUrl": "",
+          "waterPostUrl": ""
+        }
+      ],
+      "responses": [],
+      "updates": [],
+      "currentStatus": "待补公开材料和另一方回应。",
+      "updatedAt": "2026-10-26",
+      "correctionNotice": "",
+      "withdrawalNotice": "",
+      "mood": null
+    },
+    {
+      "id": "source-list-009",
+      "status": "published",
+      "order": 90,
+      "title": "Ainku｜两笔耳机转售价格记录",
+      "accounts": [
+        {
+          "displayName": "Ainku",
+          "platform": "平台待核实",
+          "profileUrl": ""
+        }
+      ],
+      "devices": [
+        "AWKT",
+        "800S"
+      ],
+      "eventDate": "2026-03-17",
+      "summary": "名单称AWKT原交易价5500元，后见6200元挂牌；另一笔800S原交易价4700元，后见5900元挂牌。原名单列有其他昵称，但未核实账号关联。",
+      "narrative": "原始名单陈述（已去除公开不必要的直接身份信息，待补材料核对）：\n\nAinku、Shtary  2026-03-17\n贱畜rank，倒狗惯犯，事主5500出awkt给狗，贱畜挂另一个号6200出；事主朋友800s 4700出给贱畜，贱畜转头另一个号挂5900出掉，然后再单出送的升级线",
+      "listingPrice": "后续挂牌价6200元及5900元（名单陈述）",
+      "transactionPrice": "原交易价5500元及4700元（名单陈述）",
+      "materials": [
+        {
+          "type": "link",
+          "title": "原始名单文字（待补公开来源）",
+          "description": "依据维护者提供的四页 DOCX 名单整理；文档未附截图、原帖链接或具体水楼楼层。此处仅记录其陈述，尚不能独立核对。",
+          "path": "",
+          "sourceUrl": "",
+          "waterPostUrl": ""
+        }
+      ],
+      "responses": [],
+      "updates": [],
+      "currentStatus": "待补公开材料和另一方回应。",
+      "updatedAt": "2026-10-26",
+      "correctionNotice": "",
+      "withdrawalNotice": "",
+      "mood": null
+    },
+    {
+      "id": "source-list-010",
+      "status": "published",
+      "order": 100,
+      "title": "爱玩但不会玩｜议价、售后抵扣与评价争议",
+      "accounts": [
+        {
+          "displayName": "爱玩但不会玩",
+          "platform": "平台待核实",
+          "profileUrl": ""
+        }
+      ],
+      "devices": [
+        "660 eqaa"
+      ],
+      "eventDate": "2026-03-07",
+      "summary": "名单称双方曾就设备价格从660元谈至450元，后续在售后抵扣金额和商品评价上出现分歧；相关官方答复未随名单提供。",
+      "narrative": "原始名单陈述（已去除公开不必要的直接身份信息，待补材料核对）：\n\n爱玩但不会玩 贴吧名：yyzbox2012 [数字账号ID已去除]  2026-3-7\n绝对爱占便宜坏逼，先是大刀事主挂的660 eqaa 至450，依然后悔觉得不值，期间找过耳机官方想借此换新，官方给抵扣500，贱畜却对事主谎称官方只抵扣300，最后污蔑事主货有问题，差评事主",
+      "listingPrice": "原报价约660元；后续议价至450元（名单陈述）",
+      "transactionPrice": "",
+      "materials": [
+        {
+          "type": "link",
+          "title": "原始名单文字（待补公开来源）",
+          "description": "依据维护者提供的四页 DOCX 名单整理；文档未附截图、原帖链接或具体水楼楼层。此处仅记录其陈述，尚不能独立核对。",
+          "path": "",
+          "sourceUrl": "",
+          "waterPostUrl": ""
+        }
+      ],
+      "responses": [],
+      "updates": [],
+      "currentStatus": "待补公开材料和另一方回应。",
+      "updatedAt": "2026-10-26",
+      "correctionNotice": "",
+      "withdrawalNotice": "",
+      "mood": null
+    },
+    {
+      "id": "source-list-011",
+      "status": "published",
+      "order": 110,
+      "title": "山东23HIFI音频馆｜二手保修口径争议与道歉记录",
+      "accounts": [
+        {
+          "displayName": "山东23HIFI音频馆",
+          "platform": "店铺（平台待核实）",
+          "profileUrl": ""
+        }
+      ],
+      "devices": [],
+      "eventDate": "2026-03-18",
+      "summary": "名单称店铺曾按账号而非订单处理二手保修，并注明店铺已道歉。未附道歉原文。",
+      "narrative": "原始名单陈述（已去除公开不必要的直接身份信息，待补材料核对）：\n\n山东23HIFI音频馆   2026-3-18\n二手拒保（已道歉） 认号不认单",
+      "listingPrice": "",
+      "transactionPrice": "",
+      "materials": [
+        {
+          "type": "link",
+          "title": "原始名单文字（待补公开来源）",
+          "description": "依据维护者提供的四页 DOCX 名单整理；文档未附截图、原帖链接或具体水楼楼层。此处仅记录其陈述，尚不能独立核对。",
+          "path": "",
+          "sourceUrl": "",
+          "waterPostUrl": ""
+        }
+      ],
+      "responses": [],
+      "updates": [],
+      "currentStatus": "待补公开材料和另一方回应。",
+      "updatedAt": "2026-10-26",
+      "correctionNotice": "",
+      "withdrawalNotice": "",
+      "mood": null
+    },
+    {
+      "id": "source-list-012",
+      "status": "published",
+      "order": 120,
+      "title": "拒绝裂痕的茶叶蛋｜线材转售挂牌与沟通争议",
+      "accounts": [
+        {
+          "displayName": "拒绝裂痕的茶叶蛋",
+          "platform": "平台待核实",
+          "profileUrl": ""
+        }
+      ],
+      "devices": [
+        "瞬声铜晶平衡0.78升级线"
+      ],
+      "eventDate": "2026-03-11",
+      "summary": "名单称原卖家挂牌700元，双方以400元交易后出现999元转售挂牌；双方随后对线材状况有不同说法。",
+      "narrative": "原始名单陈述（已去除公开不必要的直接身份信息，待补材料核对）：\n\n拒绝裂痕的茶叶蛋   2026-3-11\n倒狗，事主瞬声铜晶平衡0.78升级线挂700，狗砍到400，转手挂999，被事主指出后，辱骂事主+搅浑水污蔑物品有问题",
+      "listingPrice": "原挂牌价700元；后续挂牌价999元（名单陈述）",
+      "transactionPrice": "原交易价400元（名单陈述）",
+      "materials": [
+        {
+          "type": "link",
+          "title": "原始名单文字（待补公开来源）",
+          "description": "依据维护者提供的四页 DOCX 名单整理；文档未附截图、原帖链接或具体水楼楼层。此处仅记录其陈述，尚不能独立核对。",
+          "path": "",
+          "sourceUrl": "",
+          "waterPostUrl": ""
+        }
+      ],
+      "responses": [],
+      "updates": [],
+      "currentStatus": "待补公开材料和另一方回应。",
+      "updatedAt": "2026-10-26",
+      "correctionNotice": "",
+      "withdrawalNotice": "",
+      "mood": null
+    },
+    {
+      "id": "source-list-013",
+      "status": "published",
+      "order": 130,
+      "title": "独脚大盗｜设备瑕疵与退货沟通争议",
+      "accounts": [
+        {
+          "displayName": "独脚大盗",
+          "platform": "平台待核实",
+          "profileUrl": ""
+        }
+      ],
+      "devices": [],
+      "eventDate": "2026-03-10",
+      "summary": "名单称买方发现设备问题后联系卖方，对退货退款处理不满；未写明设备型号，也未提供沟通截图。",
+      "narrative": "原始名单陈述（已去除公开不必要的直接身份信息，待补材料核对）：\n\n独脚大盗、贴吧名：我什么都不要  2026-3-10\n隐瞒暗病，装死，不退款不退货",
+      "listingPrice": "",
+      "transactionPrice": "",
+      "materials": [
+        {
+          "type": "link",
+          "title": "原始名单文字（待补公开来源）",
+          "description": "依据维护者提供的四页 DOCX 名单整理；文档未附截图、原帖链接或具体水楼楼层。此处仅记录其陈述，尚不能独立核对。",
+          "path": "",
+          "sourceUrl": "",
+          "waterPostUrl": ""
+        }
+      ],
+      "responses": [],
+      "updates": [],
+      "currentStatus": "待补公开材料和另一方回应。",
+      "updatedAt": "2026-10-26",
+      "correctionNotice": "",
+      "withdrawalNotice": "",
+      "mood": null
+    },
+    {
+      "id": "source-list-014",
+      "status": "published",
+      "order": 140,
+      "title": "奥克奥脆｜设备型号标注争议",
+      "accounts": [
+        {
+          "displayName": "奥克奥脆",
+          "platform": "平台待核实",
+          "profileUrl": ""
+        }
+      ],
+      "devices": [
+        "高文 THA2 / THA3"
+      ],
+      "eventDate": "2026-03-10",
+      "summary": "名单称一台THA2在多次转手中被按THA3描述，买方后续发现型号差异。名单还列有其他转手昵称，但未提供足以核对交易链的材料。",
+      "narrative": "原始名单陈述（已去除公开不必要的直接身份信息，待补材料核对）：\n\n1- 奥克奥脆、2- tbNick_ly2ho   2026-3-10\n诈骗犯，自贡、扬州高风险地区\n诈骗犯1号先是把高文THA2当THA3卖，并对唯一辨识标志铭牌进行打码，卖给诈骗犯2号\n诈骗犯2号接盘后，刻意模糊铭牌标识，卖给下家\n下家再卖给事主，事主再经手卖出后，才发现被骗",
+      "listingPrice": "",
+      "transactionPrice": "",
+      "materials": [
+        {
+          "type": "link",
+          "title": "原始名单文字（待补公开来源）",
+          "description": "依据维护者提供的四页 DOCX 名单整理；文档未附截图、原帖链接或具体水楼楼层。此处仅记录其陈述，尚不能独立核对。",
+          "path": "",
+          "sourceUrl": "",
+          "waterPostUrl": ""
+        }
+      ],
+      "responses": [],
+      "updates": [],
+      "currentStatus": "待补公开材料和另一方回应。",
+      "updatedAt": "2026-10-26",
+      "correctionNotice": "",
+      "withdrawalNotice": "",
+      "mood": null
+    },
+    {
+      "id": "source-list-015",
+      "status": "published",
+      "order": 150,
+      "title": "爱吃一品鲍鱼的小饼干es｜订单取消与沟通争议",
+      "accounts": [
+        {
+          "displayName": "爱吃一品鲍鱼的小饼干es",
+          "platform": "平台待核实",
+          "profileUrl": ""
+        }
+      ],
+      "devices": [],
+      "eventDate": "",
+      "summary": "名单称卖方取消已谈妥的订单并停止联系；未提供商品、时间或平台记录。",
+      "narrative": "原始名单陈述（已去除公开不必要的直接身份信息，待补材料核对）：\n\n爱吃一品鲍鱼的小饼干es\n飞机畜，事主被放飞机，价高者得，取消订单拉黑事主一条龙",
+      "listingPrice": "",
+      "transactionPrice": "",
+      "materials": [
+        {
+          "type": "link",
+          "title": "原始名单文字（待补公开来源）",
+          "description": "依据维护者提供的四页 DOCX 名单整理；文档未附截图、原帖链接或具体水楼楼层。此处仅记录其陈述，尚不能独立核对。",
+          "path": "",
+          "sourceUrl": "",
+          "waterPostUrl": ""
+        }
+      ],
+      "responses": [],
+      "updates": [],
+      "currentStatus": "待补公开材料和另一方回应。",
+      "updatedAt": "2026-10-26",
+      "correctionNotice": "",
+      "withdrawalNotice": "",
+      "mood": null
+    },
+    {
+      "id": "source-list-016",
+      "status": "published",
+      "order": 160,
+      "title": "Yuyuyuyuyuyu｜发货后退款要求争议",
+      "accounts": [
+        {
+          "displayName": "Yuyuyuyuyuyu",
+          "platform": "平台待核实",
+          "profileUrl": ""
+        }
+      ],
+      "devices": [],
+      "eventDate": "2026-02-28",
+      "summary": "名单称买方在快递到达前提出退款要求，双方对理由有分歧；未附平台处理结果。",
+      "narrative": "原始名单陈述（已去除公开不必要的直接身份信息，待补材料核对）：\n\nYuyuyuyuyuyu  2026-2-28\n买后无故反悔，快递到达前一天各种借口要求退款",
+      "listingPrice": "",
+      "transactionPrice": "",
+      "materials": [
+        {
+          "type": "link",
+          "title": "原始名单文字（待补公开来源）",
+          "description": "依据维护者提供的四页 DOCX 名单整理；文档未附截图、原帖链接或具体水楼楼层。此处仅记录其陈述，尚不能独立核对。",
+          "path": "",
+          "sourceUrl": "",
+          "waterPostUrl": ""
+        }
+      ],
+      "responses": [],
+      "updates": [],
+      "currentStatus": "待补公开材料和另一方回应。",
+      "updatedAt": "2026-10-26",
+      "correctionNotice": "",
+      "withdrawalNotice": "",
+      "mood": null
+    },
+    {
+      "id": "source-list-017",
+      "status": "published",
+      "order": 170,
+      "title": "ILLENIUM3｜等待发货后订单取消争议",
+      "accounts": [
+        {
+          "displayName": "ILLENIUM3",
+          "platform": "百度贴吧（名单标注）",
+          "profileUrl": ""
+        }
+      ],
+      "devices": [
+        "Mach 70"
+      ],
+      "eventDate": "2026-02-25",
+      "summary": "名单称买方等待约八天后订单被取消，双方联系中断。原文涉及另一账号的关联推测，本站未采纳该关联。",
+      "narrative": "原始名单陈述（已去除公开不必要的直接身份信息，待补材料核对）：\n\n贴吧名：ILLENIUM3  2026-2-25\n飞机畜，拖事主8天后，取消订单拉黑一条龙，和著名枪手釟音盒-粑阴核强相关\n事主买下mach70等待8天后，取消订单拉黑事主",
+      "listingPrice": "",
+      "transactionPrice": "",
+      "materials": [
+        {
+          "type": "link",
+          "title": "原始名单文字（待补公开来源）",
+          "description": "依据维护者提供的四页 DOCX 名单整理；文档未附截图、原帖链接或具体水楼楼层。此处仅记录其陈述，尚不能独立核对。",
+          "path": "",
+          "sourceUrl": "",
+          "waterPostUrl": ""
+        }
+      ],
+      "responses": [],
+      "updates": [],
+      "currentStatus": "待补公开材料和另一方回应。",
+      "updatedAt": "2026-10-26",
+      "correctionNotice": "",
+      "withdrawalNotice": "",
+      "mood": null
+    },
+    {
+      "id": "source-list-018",
+      "status": "published",
+      "order": 180,
+      "title": "凡华毕恋｜耳机集中转售记录",
+      "accounts": [
+        {
+          "displayName": "凡华毕恋",
+          "platform": "平台待核实",
+          "profileUrl": ""
+        }
+      ],
+      "devices": [
+        "天鹰3"
+      ],
+      "eventDate": "2026-02-06",
+      "summary": "名单称该昵称收购并转售多件天鹰3；未提供具体交易纠纷或成色问题，转售本身不代表违规。",
+      "narrative": "原始名单陈述（已去除公开不必要的直接身份信息，待补材料核对）：\n\n凡华毕恋   2026-2-6\n倒狗，囤积大量屠龙刀价回来的天鹰3",
+      "listingPrice": "",
+      "transactionPrice": "",
+      "materials": [
+        {
+          "type": "link",
+          "title": "原始名单文字（待补公开来源）",
+          "description": "依据维护者提供的四页 DOCX 名单整理；文档未附截图、原帖链接或具体水楼楼层。此处仅记录其陈述，尚不能独立核对。",
+          "path": "",
+          "sourceUrl": "",
+          "waterPostUrl": ""
+        }
+      ],
+      "responses": [],
+      "updates": [],
+      "currentStatus": "待补公开材料和另一方回应。",
+      "updatedAt": "2026-10-26",
+      "correctionNotice": "",
+      "withdrawalNotice": "",
+      "mood": null
+    },
+    {
+      "id": "source-list-019",
+      "status": "published",
+      "order": 190,
+      "title": "肉包家的破烂屋｜插针连接与退货沟通争议",
+      "accounts": [
+        {
+          "displayName": "肉包家的破烂屋",
+          "platform": "平台待核实",
+          "profileUrl": ""
+        }
+      ],
+      "devices": [
+        "耳机及耳机线"
+      ],
+      "eventDate": "2026-02-03",
+      "summary": "名单称买方收到设备后发现左耳插针不易取下，认为存在胶水固定；卖方承认耳机线无法取下，但双方未就退货达成一致。未附图片。",
+      "narrative": "原始名单陈述（已去除公开不必要的直接身份信息，待补材料核对）：\n\n肉包家的破烂屋、贴吧名：噜噜时间到了  2026-2-3\n隐瞒暗病贱畜，事主到货后发现耳机左耳插针无法取下，发现是有胶水将其粘连，质问商家后，商家承认耳机线无法取下，但是拒绝退货和沟通。",
+      "listingPrice": "",
+      "transactionPrice": "",
+      "materials": [
+        {
+          "type": "link",
+          "title": "原始名单文字（待补公开来源）",
+          "description": "依据维护者提供的四页 DOCX 名单整理；文档未附截图、原帖链接或具体水楼楼层。此处仅记录其陈述，尚不能独立核对。",
+          "path": "",
+          "sourceUrl": "",
+          "waterPostUrl": ""
+        }
+      ],
+      "responses": [],
+      "updates": [],
+      "currentStatus": "待补公开材料和另一方回应。",
+      "updatedAt": "2026-10-26",
+      "correctionNotice": "",
+      "withdrawalNotice": "",
+      "mood": null
+    },
+    {
+      "id": "source-list-020",
+      "status": "published",
+      "order": 200,
+      "title": "护凛员｜耳机无声反馈与退货争议",
+      "accounts": [
+        {
+          "displayName": "护凛员",
+          "platform": "平台待核实",
+          "profileUrl": ""
+        }
+      ],
+      "devices": [
+        "爱咖升华"
+      ],
+      "eventDate": "",
+      "summary": "名单称买方反馈右耳无声并退货，原卖家收到后认为插头连接方式导致了该现象。故障原因和双方意图均未核实。",
+      "narrative": "原始名单陈述（已去除公开不必要的直接身份信息，待补材料核对）：\n\n护凛员\n蹭听贱畜，事主370出了一条在保爱咖升华，狗到手后说右耳没声音，退回后事主发现对方故意以错误方式连接插头端谎称无声音蹭听",
+      "listingPrice": "",
+      "transactionPrice": "原交易价约370元（名单陈述）",
+      "materials": [
+        {
+          "type": "link",
+          "title": "原始名单文字（待补公开来源）",
+          "description": "依据维护者提供的四页 DOCX 名单整理；文档未附截图、原帖链接或具体水楼楼层。此处仅记录其陈述，尚不能独立核对。",
+          "path": "",
+          "sourceUrl": "",
+          "waterPostUrl": ""
+        }
+      ],
+      "responses": [],
+      "updates": [],
+      "currentStatus": "待补公开材料和另一方回应。",
+      "updatedAt": "2026-10-26",
+      "correctionNotice": "",
+      "withdrawalNotice": "",
+      "mood": null
+    },
+    {
+      "id": "source-list-021",
+      "status": "published",
+      "order": 210,
+      "title": "棕黄的中甸冷杉｜外观划痕与沟通争议",
+      "accounts": [
+        {
+          "displayName": "棕黄的中甸冷杉",
+          "platform": "平台待核实",
+          "profileUrl": ""
+        }
+      ],
+      "devices": [],
+      "eventDate": "",
+      "summary": "名单称买方发现商品划痕，双方就事前描述和处理方式发生争议。未提供设备型号或图片。",
+      "narrative": "原始名单陈述（已去除公开不必要的直接身份信息，待补材料核对）：\n\n棕黄的中甸冷杉\n隐瞒瑕疵贱畜，隐瞒划痕，事主发现后全程耐心协商宽容大量给予贱畜台阶下还阴阳怪气",
+      "listingPrice": "",
+      "transactionPrice": "",
+      "materials": [
+        {
+          "type": "link",
+          "title": "原始名单文字（待补公开来源）",
+          "description": "依据维护者提供的四页 DOCX 名单整理；文档未附截图、原帖链接或具体水楼楼层。此处仅记录其陈述，尚不能独立核对。",
+          "path": "",
+          "sourceUrl": "",
+          "waterPostUrl": ""
+        }
+      ],
+      "responses": [],
+      "updates": [],
+      "currentStatus": "待补公开材料和另一方回应。",
+      "updatedAt": "2026-10-26",
+      "correctionNotice": "",
+      "withdrawalNotice": "",
+      "mood": null
+    },
+    {
+      "id": "source-list-022",
+      "status": "published",
+      "order": 220,
+      "title": "牧场练书法的附子｜试听后退款理由争议",
+      "accounts": [
+        {
+          "displayName": "牧场练书法的附子",
+          "platform": "平台待核实",
+          "profileUrl": ""
+        }
+      ],
+      "devices": [
+        "耳塞"
+      ],
+      "eventDate": "2025-12-06",
+      "summary": "名单称买方试听后申请退款，双方对退款理由有不同说法；平台处理记录未提供。",
+      "narrative": "原始名单陈述（已去除公开不必要的直接身份信息，待补材料核对）：\n\n牧场练书法的附子   2025-12-6\n蹭听狗，蹭听事主塞子后，因找不到合适理由，试图拿 豆包AI 替他找茬作证据申请退款，失败",
+      "listingPrice": "",
+      "transactionPrice": "",
+      "materials": [
+        {
+          "type": "link",
+          "title": "原始名单文字（待补公开来源）",
+          "description": "依据维护者提供的四页 DOCX 名单整理；文档未附截图、原帖链接或具体水楼楼层。此处仅记录其陈述，尚不能独立核对。",
+          "path": "",
+          "sourceUrl": "",
+          "waterPostUrl": ""
+        }
+      ],
+      "responses": [],
+      "updates": [],
+      "currentStatus": "待补公开材料和另一方回应。",
+      "updatedAt": "2026-10-26",
+      "correctionNotice": "",
+      "withdrawalNotice": "",
+      "mood": null
+    },
+    {
+      "id": "source-list-023",
+      "status": "published",
+      "order": 230,
+      "title": "在海里面烤鱼｜耳机转售差价争议",
+      "accounts": [
+        {
+          "displayName": "在海里面烤鱼",
+          "platform": "平台待核实",
+          "profileUrl": ""
+        }
+      ],
+      "devices": [
+        "EH2"
+      ],
+      "eventDate": "2025-12-03",
+      "summary": "名单称EH2原交易价1400元，后以1550元转售；双方对定价解释发生争执。转售差价不等于欺骗。",
+      "narrative": "原始名单陈述（已去除公开不必要的直接身份信息，待补材料核对）：\n\n在海里面烤鱼 贴吧名：欢迎进入轨道   2025-12-3\n倒狗，倒人1400的EH2，出1550，被人发现后美名其曰倒价是加在“成本价”之上，恼羞成怒，恬不知耻在吧内恶人先告状",
+      "listingPrice": "后续转售标价1550元（是否成交待核）",
+      "transactionPrice": "原交易价1400元（名单陈述）",
+      "materials": [
+        {
+          "type": "link",
+          "title": "原始名单文字（待补公开来源）",
+          "description": "依据维护者提供的四页 DOCX 名单整理；文档未附截图、原帖链接或具体水楼楼层。此处仅记录其陈述，尚不能独立核对。",
+          "path": "",
+          "sourceUrl": "",
+          "waterPostUrl": ""
+        }
+      ],
+      "responses": [],
+      "updates": [],
+      "currentStatus": "待补公开材料和另一方回应。",
+      "updatedAt": "2026-10-26",
+      "correctionNotice": "",
+      "withdrawalNotice": "",
+      "mood": null
+    },
+    {
+      "id": "source-list-024",
+      "status": "published",
+      "order": 240,
+      "title": "雨夜带刀｜耳机配线瑕疵与赔付争议",
+      "accounts": [
+        {
+          "displayName": "雨夜带刀",
+          "platform": "平台待核实",
+          "profileUrl": ""
+        }
+      ],
+      "devices": [
+        "月光银及耳机线"
+      ],
+      "eventDate": "2025-12-02",
+      "summary": "名单称买方认为耳机线存在未充分说明的问题，双方对价格、赠品和补偿金额有不同说法；未附照片或完整交易页。",
+      "narrative": "原始名单陈述（已去除公开不必要的直接身份信息，待补材料核对）：\n\n雨夜带刀（t***2)  IP属地[已去除] 贴吧名：等一个指路明灯 [数字账号ID已去除]  2025-12-2\n倒狗+隐瞒瑕疵，拍照故意拿线身挡住瑕疵，要事主尽快收货，被发现后说已经亏本卖给事主，原本事主只要他的裸塞加线，送了事主一堆淘宝识图最贵也就三十块的e套，说别人2900抢着买他月光银都没卖，事主跟他说线有问题，狗说塞子没事就行，裸塞2400加线2500给事主已经很亏了，只赔20给事主，结果事主翻了翻吧里，发现那条编号和事主手里月光银一样的塞子，第一任上架才卖2300",
+      "listingPrice": "裸塞2400元、加线2500元（名单陈述，具体成交价待核）",
+      "transactionPrice": "",
+      "materials": [
+        {
+          "type": "link",
+          "title": "原始名单文字（待补公开来源）",
+          "description": "依据维护者提供的四页 DOCX 名单整理；文档未附截图、原帖链接或具体水楼楼层。此处仅记录其陈述，尚不能独立核对。",
+          "path": "",
+          "sourceUrl": "",
+          "waterPostUrl": ""
+        }
+      ],
+      "responses": [],
+      "updates": [],
+      "currentStatus": "待补公开材料和另一方回应。",
+      "updatedAt": "2026-10-26",
+      "correctionNotice": "",
+      "withdrawalNotice": "",
+      "mood": null
+    },
+    {
+      "id": "source-list-025",
+      "status": "published",
+      "order": 250,
+      "title": "G千屈菜｜耳机新旧程度描述争议",
+      "accounts": [
+        {
+          "displayName": "G千屈菜",
+          "platform": "平台待核实",
+          "profileUrl": ""
+        }
+      ],
+      "devices": [
+        "S5000"
+      ],
+      "eventDate": "2025-11-04",
+      "summary": "名单称一件标注全新的S5000以888元售出，买方收到后反映外观磨损；随后出现788元挂牌。退款与重新挂牌情况未附原帖。",
+      "narrative": "原始名单陈述（已去除公开不必要的直接身份信息，待补材料核对）：\n\nG千屈菜（X**7）  2025-11-4\n888卖S5000谎称全新，事主收到后腔体磨损、划痕、磕碰严重，推责说快递导致，被事主成功退款后，依然以788的价格挂鱼",
+      "listingPrice": "后续挂牌价788元（名单陈述）",
+      "transactionPrice": "原交易价888元（名单陈述）",
+      "materials": [
+        {
+          "type": "link",
+          "title": "原始名单文字（待补公开来源）",
+          "description": "依据维护者提供的四页 DOCX 名单整理；文档未附截图、原帖链接或具体水楼楼层。此处仅记录其陈述，尚不能独立核对。",
+          "path": "",
+          "sourceUrl": "",
+          "waterPostUrl": ""
+        }
+      ],
+      "responses": [],
+      "updates": [],
+      "currentStatus": "待补公开材料和另一方回应。",
+      "updatedAt": "2026-10-26",
+      "correctionNotice": "",
+      "withdrawalNotice": "",
+      "mood": null
+    },
+    {
+      "id": "source-list-026",
+      "status": "published",
+      "order": 260,
+      "title": "开卷知音试听｜USB接口及附件描述争议",
+      "accounts": [
+        {
+          "displayName": "开卷知音试听",
+          "platform": "店铺（平台待核实）",
+          "profileUrl": ""
+        }
+      ],
+      "devices": [
+        "Musicbook 15"
+      ],
+      "eventDate": "2025-11-09",
+      "summary": "名单称卖方交易前描述USB接口正常、箱说齐全；买方收到后称接口不能使用且附件不全。未附检测报告或商品页。",
+      "narrative": "原始名单陈述（已去除公开不必要的直接身份信息，待补材料核对）：\n\n开卷知音试听 [详细地址已去除]   2025-11-9\n诈骗犯，出售musicbook15前和事主承诺设备USB口无坏，基本全新，并且箱说全，实际到货事主发现USB口已坏+只有裸机和遥控，事主询问USB口是否已坏，狗避重就轻",
+      "listingPrice": "",
+      "transactionPrice": "",
+      "materials": [
+        {
+          "type": "link",
+          "title": "原始名单文字（待补公开来源）",
+          "description": "依据维护者提供的四页 DOCX 名单整理；文档未附截图、原帖链接或具体水楼楼层。此处仅记录其陈述，尚不能独立核对。",
+          "path": "",
+          "sourceUrl": "",
+          "waterPostUrl": ""
+        }
+      ],
+      "responses": [],
+      "updates": [],
+      "currentStatus": "待补公开材料和另一方回应。",
+      "updatedAt": "2026-10-26",
+      "correctionNotice": "",
+      "withdrawalNotice": "",
+      "mood": null
+    },
+    {
+      "id": "source-list-027",
+      "status": "published",
+      "order": 270,
+      "title": "用户_68245926｜两笔设备议价与返款承诺争议",
+      "accounts": [
+        {
+          "displayName": "用户_68245926",
+          "platform": "平台待核实",
+          "profileUrl": ""
+        }
+      ],
+      "devices": [
+        "SP3000铜",
+        "E7"
+      ],
+      "eventDate": "",
+      "summary": "名单称SP3000铜以12100元售出，后见12500元转售；另一笔E7未成交，双方对先前约定的返款数额有争议。",
+      "narrative": "原始名单陈述（已去除公开不必要的直接身份信息，待补材料核对）：\n\n用户_68245926\n倒狗，事主12500卖SP3000铜，倒狗砍到12100，倒狗转头就12500卖了SP3000铜，恰逢事主又18000卖E7，倒狗再次砍价至17500，并承诺之前倒了SP3000铜会转200红包给事主，但是最后嫌贵没买事主E7并且只给了50红包给事主",
+      "listingPrice": "后续转售价格12500元（挂牌或成交待核）",
+      "transactionPrice": "SP3000铜原交易价12100元（名单陈述）",
+      "materials": [
+        {
+          "type": "link",
+          "title": "原始名单文字（待补公开来源）",
+          "description": "依据维护者提供的四页 DOCX 名单整理；文档未附截图、原帖链接或具体水楼楼层。此处仅记录其陈述，尚不能独立核对。",
+          "path": "",
+          "sourceUrl": "",
+          "waterPostUrl": ""
+        }
+      ],
+      "responses": [],
+      "updates": [],
+      "currentStatus": "待补公开材料和另一方回应。",
+      "updatedAt": "2026-10-26",
+      "correctionNotice": "",
+      "withdrawalNotice": "",
+      "mood": null
+    },
+    {
+      "id": "source-list-028",
+      "status": "published",
+      "order": 280,
+      "title": "碧痕入画｜耳机转售与包装交付争议",
+      "accounts": [
+        {
+          "displayName": "碧痕入画",
+          "platform": "平台待核实",
+          "profileUrl": ""
+        }
+      ],
+      "devices": [
+        "109 Pro"
+      ],
+      "eventDate": "",
+      "summary": "名单称109 Pro的原交易价为3200元，后以3400元向另一买家出售；买方关注当时包装盒是否已交付。未附物流或聊天记录。",
+      "narrative": "原始名单陈述（已去除公开不必要的直接身份信息，待补材料核对）：\n\n碧痕入画   贴吧名：忆涧叁琏\n倒狗，第一任上家：Kalix 3200出109pro给倒狗，贱畜先款，只拿到耳机未拿到盒子，事主收109pro时，贱畜说有货，并以3400的价格出给事主，此时狗还未拿到盒子，但被事主发现",
+      "listingPrice": "后续报价3400元（名单陈述）",
+      "transactionPrice": "原交易价3200元（名单陈述）",
+      "materials": [
+        {
+          "type": "link",
+          "title": "原始名单文字（待补公开来源）",
+          "description": "依据维护者提供的四页 DOCX 名单整理；文档未附截图、原帖链接或具体水楼楼层。此处仅记录其陈述，尚不能独立核对。",
+          "path": "",
+          "sourceUrl": "",
+          "waterPostUrl": ""
+        }
+      ],
+      "responses": [],
+      "updates": [],
+      "currentStatus": "待补公开材料和另一方回应。",
+      "updatedAt": "2026-10-26",
+      "correctionNotice": "",
+      "withdrawalNotice": "",
+      "mood": null
+    },
+    {
+      "id": "source-list-029",
+      "status": "published",
+      "order": 290,
+      "title": "考拉也有梦想｜播放器外观与旋钮状态争议",
+      "accounts": [
+        {
+          "displayName": "考拉也有梦想",
+          "platform": "平台待核实",
+          "profileUrl": ""
+        }
+      ],
+      "devices": [
+        "SP2000铜"
+      ],
+      "eventDate": "2025-10-25",
+      "summary": "名单称一台SP2000铜以5200元出售，买方收到后对外壳、编号及旋钮状态提出异议；原文还称双方曾讨论退货，最终过程待核。",
+      "narrative": "原始名单陈述（已去除公开不必要的直接身份信息，待补材料核对）：\n\n考拉也有梦想（y***2)  2025-10-25\n以坏充好贱畜，5200卖SP2000铜，外壳为了卖出后期加工过、疑似拆过后盖、三码不一、旋钮有问题，事主发现后，口头愿意退，事主事情后立马变脸拒绝，贱畜本色尽显地反驳事主，事主买之前没问音量旋钮有问题，所以卖出有问题它不管。退事主款后，此问题机依然在挂卖，并且为了尽快坑到人，言机子秒确认会减价",
+      "listingPrice": "",
+      "transactionPrice": "交易价约5200元（名单陈述）",
+      "materials": [
+        {
+          "type": "link",
+          "title": "原始名单文字（待补公开来源）",
+          "description": "依据维护者提供的四页 DOCX 名单整理；文档未附截图、原帖链接或具体水楼楼层。此处仅记录其陈述，尚不能独立核对。",
+          "path": "",
+          "sourceUrl": "",
+          "waterPostUrl": ""
+        }
+      ],
+      "responses": [],
+      "updates": [],
+      "currentStatus": "待补公开材料和另一方回应。",
+      "updatedAt": "2026-10-26",
+      "correctionNotice": "",
+      "withdrawalNotice": "",
+      "mood": null
+    },
+    {
+      "id": "source-list-030",
+      "status": "published",
+      "order": 300,
+      "title": "16weimima｜耳机转售价格记录",
+      "accounts": [
+        {
+          "displayName": "16weimima",
+          "platform": "百度贴吧（名单标注）",
+          "profileUrl": ""
+        }
+      ],
+      "devices": [
+        "银乌"
+      ],
+      "eventDate": "2025-10-03",
+      "summary": "名单称银乌以2700元售出，后来出现3500元转售；未附挂牌或成交凭证。",
+      "narrative": "原始名单陈述（已去除公开不必要的直接身份信息，待补材料核对）：\n\n贴吧名：16weimima  [数字账号ID已去除]  2025-10-03\n倒狗，2700收事主银乌，3500倒",
+      "listingPrice": "后续价格3500元（挂牌或成交待核）",
+      "transactionPrice": "原交易价2700元（名单陈述）",
+      "materials": [
+        {
+          "type": "link",
+          "title": "原始名单文字（待补公开来源）",
+          "description": "依据维护者提供的四页 DOCX 名单整理；文档未附截图、原帖链接或具体水楼楼层。此处仅记录其陈述，尚不能独立核对。",
+          "path": "",
+          "sourceUrl": "",
+          "waterPostUrl": ""
+        }
+      ],
+      "responses": [],
+      "updates": [],
+      "currentStatus": "待补公开材料和另一方回应。",
+      "updatedAt": "2026-10-26",
+      "correctionNotice": "",
+      "withdrawalNotice": "",
+      "mood": null
+    },
+    {
+      "id": "source-list-031",
+      "status": "published",
+      "order": 310,
+      "title": "镜花水月幻梦｜私模佩戴问题与退款争议",
+      "accounts": [
+        {
+          "displayName": "镜花水月幻梦",
+          "platform": "平台待核实",
+          "profileUrl": ""
+        }
+      ],
+      "devices": [
+        "私模耳机"
+      ],
+      "eventDate": "2025-10-03",
+      "summary": "名单称交易前双方讨论过私模佩戴问题，收货后买方仍提出退款，后续又发生转售；具体约定和处理结果未附材料。",
+      "narrative": "原始名单陈述（已去除公开不必要的直接身份信息，待补材料核对）：\n\n镜花水月幻梦   2025-10-03\n纯傻逼，分不清私模公模分别，和事主约好佩戴问题不予退货，到货还是以私模套不了耳套为由退款，和事主对峙期间卖出后又无事发生",
+      "listingPrice": "",
+      "transactionPrice": "",
+      "materials": [
+        {
+          "type": "link",
+          "title": "原始名单文字（待补公开来源）",
+          "description": "依据维护者提供的四页 DOCX 名单整理；文档未附截图、原帖链接或具体水楼楼层。此处仅记录其陈述，尚不能独立核对。",
+          "path": "",
+          "sourceUrl": "",
+          "waterPostUrl": ""
+        }
+      ],
+      "responses": [],
+      "updates": [],
+      "currentStatus": "待补公开材料和另一方回应。",
+      "updatedAt": "2026-10-26",
+      "correctionNotice": "",
+      "withdrawalNotice": "",
+      "mood": null
+    },
+    {
+      "id": "source-list-032",
+      "status": "published",
+      "order": 320,
+      "title": "原声馆｜促销折扣订单履行争议",
+      "accounts": [
+        {
+          "displayName": "原声馆",
+          "platform": "店铺（平台待核实）",
+          "profileUrl": ""
+        }
+      ],
+      "devices": [],
+      "eventDate": "2025-09-30",
+      "summary": "名单称买方使用平台折扣下单后，店铺未发货并终止沟通；未提供订单或平台处理记录。",
+      "narrative": "原始名单陈述（已去除公开不必要的直接身份信息，待补材料核对）：\n\n原声馆 2025-09-30\n拒绝接受淘宝平台折扣活动，事主购买后拒不发货，最后在淘宝店铺层面就拉黑事主",
+      "listingPrice": "",
+      "transactionPrice": "",
+      "materials": [
+        {
+          "type": "link",
+          "title": "原始名单文字（待补公开来源）",
+          "description": "依据维护者提供的四页 DOCX 名单整理；文档未附截图、原帖链接或具体水楼楼层。此处仅记录其陈述，尚不能独立核对。",
+          "path": "",
+          "sourceUrl": "",
+          "waterPostUrl": ""
+        }
+      ],
+      "responses": [],
+      "updates": [],
+      "currentStatus": "待补公开材料和另一方回应。",
+      "updatedAt": "2026-10-26",
+      "correctionNotice": "",
+      "withdrawalNotice": "",
+      "mood": null
+    },
+    {
+      "id": "source-list-033",
+      "status": "published",
+      "order": 330,
+      "title": "爱听音乐的西瓜｜多笔设备转售价格记录",
+      "accounts": [
+        {
+          "displayName": "爱听音乐的西瓜",
+          "platform": "平台待核实",
+          "profileUrl": ""
+        }
+      ],
+      "devices": [
+        "SA700",
+        "SE300",
+        "NX8"
+      ],
+      "eventDate": "2025-09-27",
+      "summary": "名单列出三笔原交易价与后续转售价：SA700约1600至2200元、SE300约4650至5050元、NX8约590至810元。未核实各笔实际成交及原名单所列其他昵称关联。",
+      "narrative": "原始名单陈述（已去除公开不必要的直接身份信息，待补材料核对）：\n\n爱听音乐的西瓜（h***8)   蒲甘挖宝的木豆   2025-09-27\n[详细地址已去除]，[电话号码已去除]\n贴吧名：housecoolboy 、wshtnic [数字账号ID已去除]\n倒狗惯犯\n1600收事主SA700，2200倒\n9月18日，另一事主4650卖SE300，9月25日转手倒了5050，并说准备退烧不再如此行径\n9月27日，再有事主曝出：狗590收事主NX8，转头倒了810",
+      "listingPrice": "后续价格2200、5050、810元（挂牌或成交待核）",
+      "transactionPrice": "原交易价1600、4650、590元（名单陈述）",
+      "materials": [
+        {
+          "type": "link",
+          "title": "原始名单文字（待补公开来源）",
+          "description": "依据维护者提供的四页 DOCX 名单整理；文档未附截图、原帖链接或具体水楼楼层。此处仅记录其陈述，尚不能独立核对。",
+          "path": "",
+          "sourceUrl": "",
+          "waterPostUrl": ""
+        }
+      ],
+      "responses": [],
+      "updates": [],
+      "currentStatus": "待补公开材料和另一方回应。",
+      "updatedAt": "2026-10-26",
+      "correctionNotice": "",
+      "withdrawalNotice": "",
+      "mood": null
+    },
+    {
+      "id": "source-list-034",
+      "status": "published",
+      "order": 340,
+      "title": "陶都稀有的锅巴｜耳机议价与再挂牌争议",
+      "accounts": [
+        {
+          "displayName": "陶都稀有的锅巴",
+          "platform": "平台待核实",
+          "profileUrl": ""
+        }
+      ],
+      "devices": [
+        "Floating Sheep"
+      ],
+      "eventDate": "2025-09-27",
+      "summary": "名单称原卖家从1800元降至1400元成交，随后出现1700元的转售挂牌；未附商品页或成交记录。",
+      "narrative": "原始名单陈述（已去除公开不必要的直接身份信息，待补材料核对）：\n\n陶都稀有的锅巴(x***6)  贴吧名：llzzhh、hiyori_147  [数字账号ID已去除]   2025-09-27\n倒狗惯犯，[个人背景信息已去除]，事主1800卖floating sheep，贱畜以要和女友消费为由，砍事主至1400，转头1700卖，事主原图不改直接套用",
+      "listingPrice": "原报价1800元；后续挂牌价1700元（名单陈述）",
+      "transactionPrice": "成交价1400元（名单陈述）",
+      "materials": [
+        {
+          "type": "link",
+          "title": "原始名单文字（待补公开来源）",
+          "description": "依据维护者提供的四页 DOCX 名单整理；文档未附截图、原帖链接或具体水楼楼层。此处仅记录其陈述，尚不能独立核对。",
+          "path": "",
+          "sourceUrl": "",
+          "waterPostUrl": ""
+        }
+      ],
+      "responses": [],
+      "updates": [],
+      "currentStatus": "待补公开材料和另一方回应。",
+      "updatedAt": "2026-10-26",
+      "correctionNotice": "",
+      "withdrawalNotice": "",
+      "mood": null
+    },
+    {
+      "id": "source-list-035",
+      "status": "published",
+      "order": 350,
+      "title": "下午茶的香菇｜播放器转售成色争议",
+      "accounts": [
+        {
+          "displayName": "下午茶的香菇",
+          "platform": "平台待核实",
+          "profileUrl": ""
+        }
+      ],
+      "devices": [
+        "SP1000 / SP2000"
+      ],
+      "eventDate": "2025-08-25",
+      "summary": "名单称该昵称转售多台播放器，并有买方反映其中一台存在问题；未提供具体型号、检测材料或处理结论。",
+      "narrative": "原始名单陈述（已去除公开不必要的直接身份信息，待补材料核对）：\n\n下午茶的香菇 （j***a) 常住地[已去除]，IP属地[已去除]   2025-08-25\n诈骗犯+倒狗，倒大量SP1000/2000机型，以次充好，卖给事主问题机",
+      "listingPrice": "",
+      "transactionPrice": "",
+      "materials": [
+        {
+          "type": "link",
+          "title": "原始名单文字（待补公开来源）",
+          "description": "依据维护者提供的四页 DOCX 名单整理；文档未附截图、原帖链接或具体水楼楼层。此处仅记录其陈述，尚不能独立核对。",
+          "path": "",
+          "sourceUrl": "",
+          "waterPostUrl": ""
+        }
+      ],
+      "responses": [],
+      "updates": [],
+      "currentStatus": "待补公开材料和另一方回应。",
+      "updatedAt": "2026-10-26",
+      "correctionNotice": "",
+      "withdrawalNotice": "",
+      "mood": null
+    },
+    {
+      "id": "source-list-036",
+      "status": "published",
+      "order": 360,
+      "title": "星期日发条橙｜播放器触控问题与退款争议",
+      "accounts": [
+        {
+          "displayName": "星期日发条橙",
+          "platform": "平台待核实",
+          "profileUrl": ""
+        }
+      ],
+      "devices": [
+        "N3 Pro"
+      ],
+      "eventDate": "2025-08-25",
+      "summary": "名单称买方收到N3 Pro后反馈触控异常，另提及较早交易中的退货纠纷。原文列有多昵称、地域和个人背景信息，本站未认定这些昵称属于同一人。",
+      "narrative": "原始名单陈述（已去除公开不必要的直接身份信息，待补材料核对）：\n\n星期日发条橙（x***5）、哈利菠萝（x***4）、一首歌未完成、HALO麦当当\nIP属地[已去除]\n贴吧名：Halok、 OXford、Halo1237 [数字账号ID已去除] 、leonn1, [数字账号ID已去除] 、lucky122\n南京金针菇男，[个人背景信息已去除]，热爱假装女人，现实生活中喝饮料喜欢仅退款，不做人的期间在北科考研，假期IP属地[已去除]，开学后IP属地[已去除]\n诈骗犯+蹭听+整体表现最符合贱畜rank的级别，2025-08-25，n3pro以次充新卖，断触机卖给事主，事主没计较收货，后续事主再想联络，贱畜早已拉黑事主； 2025-4-7，蹭听事主物品，为了退款，P图、故意损坏物品，常骗各式快递的赔偿，开小号辱骂其他事主",
+      "listingPrice": "",
+      "transactionPrice": "",
+      "materials": [
+        {
+          "type": "link",
+          "title": "原始名单文字（待补公开来源）",
+          "description": "依据维护者提供的四页 DOCX 名单整理；文档未附截图、原帖链接或具体水楼楼层。此处仅记录其陈述，尚不能独立核对。",
+          "path": "",
+          "sourceUrl": "",
+          "waterPostUrl": ""
+        }
+      ],
+      "responses": [],
+      "updates": [],
+      "currentStatus": "待补公开材料和另一方回应。",
+      "updatedAt": "2026-10-26",
+      "correctionNotice": "",
+      "withdrawalNotice": "",
+      "mood": null
+    },
+    {
+      "id": "source-list-037",
+      "status": "published",
+      "order": 370,
+      "title": "射箭场天赋异禀的玻璃海葵｜购买记录使用争议",
+      "accounts": [
+        {
+          "displayName": "射箭场天赋异禀的玻璃海葵",
+          "platform": "平台待核实",
+          "profileUrl": ""
+        }
+      ],
+      "devices": [],
+      "eventDate": "2025-05-28",
+      "summary": "名单提醒交易购买记录可能被他人用于不当用途，并提及数个昵称之间的争执；未提供可核对的具体交易凭证。",
+      "narrative": "原始名单陈述（已去除公开不必要的直接身份信息，待补材料核对）：\n\n射箭场天赋异禀的玻璃海葵(x***3)、HiFi影分身、有间HiFi店（许***涵）     2025-05-28\n倒狗三角乱斗，偷人购买记录，诈骗犯互斗、互相泼脏水\n这个案例引出不要随便给人购买记录，否则容易被拿去造假、骗保\n狗操的屄玩意儿，把无辜人士二手交易的精力和成本变相增加了",
+      "listingPrice": "",
+      "transactionPrice": "",
+      "materials": [
+        {
+          "type": "link",
+          "title": "原始名单文字（待补公开来源）",
+          "description": "依据维护者提供的四页 DOCX 名单整理；文档未附截图、原帖链接或具体水楼楼层。此处仅记录其陈述，尚不能独立核对。",
+          "path": "",
+          "sourceUrl": "",
+          "waterPostUrl": ""
+        }
+      ],
+      "responses": [],
+      "updates": [],
+      "currentStatus": "待补公开材料和另一方回应。",
+      "updatedAt": "2026-10-26",
+      "correctionNotice": "",
+      "withdrawalNotice": "",
+      "mood": null
+    },
+    {
+      "id": "source-list-038",
+      "status": "published",
+      "order": 380,
+      "title": "开博尔｜试听退款约定争议",
+      "accounts": [
+        {
+          "displayName": "开博尔",
+          "platform": "店铺（平台待核实）",
+          "profileUrl": ""
+        }
+      ],
+      "devices": [
+        "试听设备"
+      ],
+      "eventDate": "2025-06-03",
+      "summary": "名单称卖方曾提出一年试听安排，买方后来申请退款时双方对约定内容有分歧；未附活动规则或聊天记录。",
+      "narrative": "原始名单陈述（已去除公开不必要的直接身份信息，待补材料核对）：\n\n开博尔   2025-06-03\n赖账狗，和事主承诺一年试听活动，事主想退款时，不承认有此活动并拉黑事主",
+      "listingPrice": "",
+      "transactionPrice": "",
+      "materials": [
+        {
+          "type": "link",
+          "title": "原始名单文字（待补公开来源）",
+          "description": "依据维护者提供的四页 DOCX 名单整理；文档未附截图、原帖链接或具体水楼楼层。此处仅记录其陈述，尚不能独立核对。",
+          "path": "",
+          "sourceUrl": "",
+          "waterPostUrl": ""
+        }
+      ],
+      "responses": [],
+      "updates": [],
+      "currentStatus": "待补公开材料和另一方回应。",
+      "updatedAt": "2026-10-26",
+      "correctionNotice": "",
+      "withdrawalNotice": "",
+      "mood": null
+    },
+    {
+      "id": "source-list-039",
+      "status": "published",
+      "order": 390,
+      "title": "橘子数码音像馆｜包裹内容与售后争议",
+      "accounts": [
+        {
+          "displayName": "橘子数码音像馆",
+          "platform": "拼多多店铺（名单标注）",
+          "profileUrl": ""
+        }
+      ],
+      "devices": [],
+      "eventDate": "2025-05-25",
+      "summary": "名单称买方收到的包裹缺少所购商品，双方对责任归属有争议；未附开箱、物流或平台处理材料。",
+      "narrative": "原始名单陈述（已去除公开不必要的直接身份信息，待补材料核对）：\n\n拼多多店铺：橘子数码音像馆  2025-05-25\n发空包给事主，事主追责，倒打一耙事主在诈骗",
+      "listingPrice": "",
+      "transactionPrice": "",
+      "materials": [
+        {
+          "type": "link",
+          "title": "原始名单文字（待补公开来源）",
+          "description": "依据维护者提供的四页 DOCX 名单整理；文档未附截图、原帖链接或具体水楼楼层。此处仅记录其陈述，尚不能独立核对。",
+          "path": "",
+          "sourceUrl": "",
+          "waterPostUrl": ""
+        }
+      ],
+      "responses": [],
+      "updates": [],
+      "currentStatus": "待补公开材料和另一方回应。",
+      "updatedAt": "2026-10-26",
+      "correctionNotice": "",
+      "withdrawalNotice": "",
+      "mood": null
+    },
+    {
+      "id": "source-list-040",
+      "status": "published",
+      "order": 400,
+      "title": "KirbyKFC｜设备维修状况说明争议",
+      "accounts": [
+        {
+          "displayName": "KirbyKFC",
+          "platform": "平台待核实",
+          "profileUrl": ""
+        }
+      ],
+      "devices": [],
+      "eventDate": "2025-05-25",
+      "summary": "名单称设备原交易价1700元，后以1900元转出；买方对维修状况是否事先说明提出异议。",
+      "narrative": "原始名单陈述（已去除公开不必要的直接身份信息，待补材料核对）：\n\nKirbyKFC  2025-05-25\n倒狗，1700收，1900出给事主，隐瞒维修状况",
+      "listingPrice": "后续转售价格1900元（挂牌或成交待核）",
+      "transactionPrice": "原交易价1700元（名单陈述）",
+      "materials": [
+        {
+          "type": "link",
+          "title": "原始名单文字（待补公开来源）",
+          "description": "依据维护者提供的四页 DOCX 名单整理；文档未附截图、原帖链接或具体水楼楼层。此处仅记录其陈述，尚不能独立核对。",
+          "path": "",
+          "sourceUrl": "",
+          "waterPostUrl": ""
+        }
+      ],
+      "responses": [],
+      "updates": [],
+      "currentStatus": "待补公开材料和另一方回应。",
+      "updatedAt": "2026-10-26",
+      "correctionNotice": "",
+      "withdrawalNotice": "",
+      "mood": null
+    },
+    {
+      "id": "source-list-041",
+      "status": "published",
+      "order": 410,
+      "title": "我是一只鱼｜耳机成色与配件描述争议",
+      "accounts": [
+        {
+          "displayName": "我是一只鱼",
+          "platform": "平台待核实",
+          "profileUrl": ""
+        }
+      ],
+      "devices": [
+        "耳机"
+      ],
+      "eventDate": "2025-03-03",
+      "summary": "名单称卖方描述使用时间较短、仅缺说明书；买方收到后认为腔体磨损和耳套配件与预期不同。未附原商品页或照片。",
+      "narrative": "原始名单陈述（已去除公开不必要的直接身份信息，待补材料核对）：\n\n我是一只鱼（x***6)  贴吧名：我曾踏月而来🌙🚀 [数字账号ID已去除]    2025-03-3\n隐瞒瑕疵+诈骗犯，特地用小号卖货，玩文字游戏，不说成色，只说用了一个月并且说只缺说明书，事主买到货后发现腔体磨损严重、耳套不配套，追责后搅浑水，认为自己卖的低价就可以以次充新",
+      "listingPrice": "",
+      "transactionPrice": "",
+      "materials": [
+        {
+          "type": "link",
+          "title": "原始名单文字（待补公开来源）",
+          "description": "依据维护者提供的四页 DOCX 名单整理；文档未附截图、原帖链接或具体水楼楼层。此处仅记录其陈述，尚不能独立核对。",
+          "path": "",
+          "sourceUrl": "",
+          "waterPostUrl": ""
+        }
+      ],
+      "responses": [],
+      "updates": [],
+      "currentStatus": "待补公开材料和另一方回应。",
+      "updatedAt": "2026-10-26",
+      "correctionNotice": "",
+      "withdrawalNotice": "",
+      "mood": null
+    },
+    {
+      "id": "source-list-042",
+      "status": "published",
+      "order": 420,
+      "title": "有间HiFi店｜耳机议价与再挂牌记录",
+      "accounts": [
+        {
+          "displayName": "有间HiFi店",
+          "platform": "店铺（平台待核实）",
+          "profileUrl": ""
+        }
+      ],
+      "devices": [
+        "1750CU"
+      ],
+      "eventDate": "2024-08-01",
+      "summary": "名单称1750CU原报价2100元，后来以2050元交易，再出现2599元挂牌。原文列出多位昵称，本站未据此认定账号关联。",
+      "narrative": "原始名单陈述（已去除公开不必要的直接身份信息，待补材料核对）：\n\n有间HiFi店、华东偷懒的小青龙(j***7)、嗨吧小聋人(谢***樾）、咖啡馆出馊主意的枸杞 IP属地[已去除]  贴吧号：嗨吧小聋人、HiFi佬  [数字账号ID已去除]  ，九点半下班ddd  、星辰大海85  想给吉尔放个假 [数字账号ID已去除]     2024-08-01\n倒狗惯犯、诈骗犯，事主2100出1750cu，贱畜谎称自己是学生，2050收，转头挂2599卖",
+      "listingPrice": "原报价2100元；后续挂牌价2599元（名单陈述）",
+      "transactionPrice": "成交价2050元（名单陈述）",
+      "materials": [
+        {
+          "type": "link",
+          "title": "原始名单文字（待补公开来源）",
+          "description": "依据维护者提供的四页 DOCX 名单整理；文档未附截图、原帖链接或具体水楼楼层。此处仅记录其陈述，尚不能独立核对。",
+          "path": "",
+          "sourceUrl": "",
+          "waterPostUrl": ""
+        }
+      ],
+      "responses": [],
+      "updates": [],
+      "currentStatus": "待补公开材料和另一方回应。",
+      "updatedAt": "2026-10-26",
+      "correctionNotice": "",
+      "withdrawalNotice": "",
+      "mood": null
+    },
+    {
+      "id": "source-list-043",
+      "status": "published",
+      "order": 430,
+      "title": "Nicoฅ｜签收催促与沟通争议",
+      "accounts": [
+        {
+          "displayName": "Nicoฅ",
+          "platform": "百度贴吧（名单标注）",
+          "profileUrl": ""
+        }
+      ],
+      "devices": [],
+      "eventDate": "2023-11-07",
+      "summary": "名单称交易双方在签收时效与联系频率上发生争执；未附通话或聊天记录。",
+      "narrative": "原始名单陈述（已去除公开不必要的直接身份信息，待补材料核对）：\n\n耳机吧12级  贴吧名：Nicoฅ ID：[数字账号ID已去除]  2023-11-07\n贱畜，没明确要求事主及时签收便电话轰炸事主，同时喜欢嘴臭其他事主",
+      "listingPrice": "",
+      "transactionPrice": "",
+      "materials": [
+        {
+          "type": "link",
+          "title": "原始名单文字（待补公开来源）",
+          "description": "依据维护者提供的四页 DOCX 名单整理；文档未附截图、原帖链接或具体水楼楼层。此处仅记录其陈述，尚不能独立核对。",
+          "path": "",
+          "sourceUrl": "",
+          "waterPostUrl": ""
+        }
+      ],
+      "responses": [],
+      "updates": [],
+      "currentStatus": "待补公开材料和另一方回应。",
+      "updatedAt": "2026-10-26",
+      "correctionNotice": "",
+      "withdrawalNotice": "",
+      "mood": null
+    }
+  ]
+}

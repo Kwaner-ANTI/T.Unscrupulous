@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="HiFi 社区交易事件详情。">
+    <meta name="theme-color" content="#f5faf9" data-theme-color>
+    <title>事件详情 · HiFi 交易事件簿</title>
+    <script>document.documentElement.dataset.theme=localStorage.getItem("hifi-theme")||((matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light");</script>
+    <link rel="stylesheet" href="assets/styles.css">
+  </head>
+  <body data-page="event" data-root="">
+    <a class="skip-link" href="#event-content">跳到事件正文</a>
+    <header class="site-header">
+      <a class="brand" href="index.html" data-back-link aria-label="返回事件列表">
+        <span class="brand-mark" aria-hidden="true"><i></i></span>
+        <span><strong data-site-name>HiFi 交易事件簿</strong><small>COMMUNITY RECORDS · SIDE B</small></span>
+      </a>
+      <div class="header-actions">
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="切换深色模式"><span aria-hidden="true">◐</span><span data-theme-label>深色</span></button>
+        <a class="quiet-link" href="index.html" data-back-link>返回事件列表</a>
+      </div>
+    </header>
+
+    <figure class="visual-bar visual-bar-detail shell" aria-label="戴耳机的女孩站在田野边的横幅插画">
+      <img src="assets/images/brand/listening-bar-field.webp" alt="戴耳机的女孩站在绿色田野边" width="1536" height="512">
+      <figcaption><strong>SOURCE SIDE</strong><span>陈述、材料与回应分轨呈现。</span></figcaption>
+    </figure>
+
+    <main id="event-content" class="detail-shell shell" aria-busy="true">
+      <div class="loading-card">正在读取事件资料…</div>
+    </main>
+
+    <section class="submit-strip shell detail-submit" aria-labelledby="detail-submit-title">
+      <div>
+        <p class="eyebrow">补充与更正</p>
+        <h2 id="detail-submit-title">提交相关材料</h2>
+        <p>请说明事件标识与材料来源。网站不会自动抓取、接收或发布内容。</p>
+      </div>
+      <div class="submit-actions" data-submit-actions></div>
+    </section>
+
+    <footer class="site-footer shell">
+      <p>本站区分投稿者陈述、可核对材料、当事人回应和后续更新；缺失内容不会代为补写。</p>
+    </footer>
+
+    <dialog class="lightbox" data-lightbox>
+      <button type="button" class="lightbox-close" data-lightbox-close aria-label="关闭大图">关闭</button>
+      <figure><img alt=""><figcaption></figcaption></figure>
+    </dialog>
+    <div class="toast" data-toast role="status" aria-live="polite"></div>
+    <script src="assets/app.js" defer></script>
+  </body>
+</html>
