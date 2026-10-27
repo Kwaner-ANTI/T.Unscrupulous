@@ -17,7 +17,7 @@
       if (label) label.textContent = isDark ? "浅色" : "深色";
     });
     const themeColor = document.querySelector("[data-theme-color]");
-    if (themeColor) themeColor.setAttribute("content", isDark ? "#0b1112" : "#f5faf9");
+    if (themeColor) themeColor.setAttribute("content", isDark ? "#15110e" : "#fff8f0");
   }
 
   function initTheme() {
@@ -70,6 +70,10 @@
     const data = structuredClone(input);
     data.schemaVersion = data.schemaVersion || 1;
     data.site = data.site || {};
+    for (const key of ["offers", "contributions"]) {
+      if (data[key] !== undefined && !Array.isArray(data[key])) throw new Error(`${key} 必须是数组`);
+      data[key] = data[key] || [];
+    }
     data.site.submissions = data.site.submissions || {};
     data.events = data.events.map((event, index) => ({
       ...event,
@@ -88,7 +92,94 @@
   async function loadSiteData(url = new URL("data/events.json", rootUrl)) {
     const response = await fetch(url, { cache: "no-store" });
     if (!response.ok) throw new Error(`数据读取失败（HTTP ${response.status}）`);
-    return normalizeData(await response.json());
+    const data = normalizeData(await response.json());
+    if (page === "editor") {
+      for (const key of ["offers", "contributions"]) {
+        const extra = await loadCollection(key);
+        data[key] = extra;
+      }
+    }
+    return data;
+  }
+
+  async function loadCollection(key) {
+    const response = await fetch(new URL(`data/${key}.json`, rootUrl), { cache: "no-store" });
+    if (!response.ok) throw new Error(`${key} 读取失败（HTTP ${response.status}）`);
+    const value = await response.json();
+    if (!Array.isArray(value[key])) throw new Error(`${key} 必须是数组`);
+    return value[key];
+  }
+
+  function todayInChina() {
+    return new Intl.DateTimeFormat("sv-SE", { timeZone: "Asia/Shanghai", year: "numeric", month: "2-digit", day: "2-digit" }).format(new Date());
+  }
+
+  function offerVisible(item) {
+    return item.status === "published" && (!item.validUntil || item.validUntil >= todayInChina());
+  }
+
+  function publicContribution(item) {
+    // Never send a saved nickname into public DOM without explicit consent.
+    return item.status === "published";
+  }
+
+  function contributionCard(item, linkEvent = true) {
+    const card = node("article", { className: "community-card contribution-card" });
+    const heading = node("div", { className: "contributor-heading" });
+    const placeholder = node("span", { className: "contributor-avatar avatar-placeholder", text: "◉", attrs: { "aria-hidden": "true" } });
+    const avatar = item.publicConsent === true && /^assets\/images\/contributors\/avatar-[a-zA-Z0-9-]+\.jpg$/.test(item.avatarPath || "") ? item.avatarPath : "";
+    if (avatar) {
+      const img = node("img", { className: "contributor-avatar", attrs: { src: assetUrl(avatar), alt: "", width: "64", height: "64", loading: "lazy" } });
+      img.addEventListener("error", () => img.replaceWith(placeholder), { once: true }); heading.append(img);
+    } else heading.append(placeholder);
+    heading.append(node("h3", { text: item.publicConsent === true && item.nickname ? item.nickname : "匿名贡献者" }));
+    card.append(heading,
+      node("p", { className: "eyebrow", text: item.category || "贡献表" }),
+      node("p", { text: item.description || "" }));
+    if (item.badge) card.append(node("span", { className: "honor-badge", text: item.badge }));
+    if (linkEvent && item.eventId) card.append(node("a", { text: "查看对应事件", attrs: { href: new URL(`event.html?id=${encodeURIComponent(item.eventId)}`, rootUrl).href } }));
+    return card;
+  }
+
+  async function initCommunity() {
+    const key = page === "offers" ? "offers" : "contributions";
+    const container = document.querySelector("[data-community-list]");
+    try {
+      const items = await loadCollection(key);
+      const search = document.querySelector("[data-community-search]");
+      const platform = document.querySelector("[data-offer-platform]");
+      const category = document.querySelector("[data-community-category]");
+      const sort = document.querySelector("[data-community-sort]");
+      const visible = items.filter(key === "offers" ? offerVisible : publicContribution);
+      [...new Set(visible.map(item => item.category).filter(Boolean))].sort().forEach(value => category.append(node("option", { text: value, attrs: { value } })));
+      const render = () => {
+        const query = search.value.trim().toLocaleLowerCase();
+        const filtered = visible.filter(item => (!platform || !platform.value || item.platform === platform.value) && (!category.value || category.value === item.category) &&
+          [item.title, item.productName, item.category, item.conditions, item.source, item.notes, item.description, item.badge, item.publicConsent === true ? item.nickname : "匿名贡献者"].filter(Boolean).join(" ").toLocaleLowerCase().includes(query));
+        filtered.sort((a,b) => sort.value === "updated" ? String(b.updatedAt || "").localeCompare(String(a.updatedAt || "")) : (Number(a.order) || 0) - (Number(b.order) || 0));
+        container.replaceChildren();
+        filtered.forEach(item => {
+          if (key === "contributions") { container.append(contributionCard(item)); return; }
+          const card = node("article", { className: "community-card offer-card" });
+          card.append(node("p", { className: "eyebrow", text: `${item.platform || ""} · ${item.category || "未分类"}` }), node("h2", { text: item.title }), node("p", { text: item.productName }));
+          const facts = node("dl", { className: "community-facts" });
+          const fact = (label,value) => { facts.append(node("dt", { text: label }), node("dd", { text: value || "未提供" })); };
+          fact("优惠条件", item.conditions); fact("标价", item.priceNote ? item.listPrice : "未核实，不展示"); fact("优惠后价格", item.priceNote ? item.finalPrice : "未核实，不展示");
+          fact("价格来源及核实说明", item.priceNote); fact("优惠来源", item.source); fact("使用限制", item.restrictions);
+          fact("有效期至", item.validUntil ? `${item.validUntil}（北京时间，当日结束）` : "未提供，请以平台页面为准"); fact("更新时间", item.updatedAt); fact("备注", item.notes);
+          card.append(facts, node("p", { className: "commission-label", text: item.affiliate === true ? "推广佣金链接：维护者可能获得佣金" : "普通链接（维护者标记为无推广佣金）" }));
+          const url = safeUrl(item.url);
+          if (url) card.append(node("a", { className: "button", text: "前往平台查看优惠", attrs: { href: url, target: "_blank", rel: `noopener noreferrer${item.affiliate === true ? " sponsored" : ""}` } }));
+          else card.append(node("p", { text: "领取链接暂不可用" }));
+          container.append(card);
+        });
+        document.querySelector("[data-community-count]").textContent = `${filtered.length} 条记录`;
+        if (!filtered.length) container.append(node("p", { className: "empty-state", text: query || category.value || platform?.value ? "没有符合条件的记录。" : "暂时没有公开记录。" }));
+      };
+      [search, platform, category, sort].filter(Boolean).forEach(control => control.addEventListener("input", render));
+      render();
+    } catch (error) { container.replaceChildren(node("p", { className: "error-card", text: `暂时无法读取：${error.message}` })); }
+    container.setAttribute("aria-busy", "false");
   }
 
   function renderSiteMeta(data) {
@@ -155,7 +246,7 @@
         submissionField("平台", "platform", "text", { placeholder: "百度贴吧、闲鱼、淘宝等" }),
         submissionField("相关设备", "device", "text", { placeholder: "型号或物品名称" }),
         submissionField("事件日期", "date", "date"),
-        submissionField("大致事发经过", "story", "textarea", { rows: "5", required: "" }),
+        submissionField("大致事发经过", "story", "textarea", { rows: "5", required: "required" }),
         submissionField("目前结果", "result", "textarea", { rows: "3", placeholder: "退款、协商中、未解决等" }),
         submissionField("材料链接或说明", "materials", "textarea", { rows: "3", placeholder: "原帖、商品页、截图说明；没有可留空" }),
         node("fieldset", { className: "submission-mood" }, [
@@ -168,10 +259,26 @@
       ]),
       node("p", { className: "submission-status", attrs: { "data-submission-status": "true", role: "status", "aria-live": "polite" } }),
       node("textarea", { className: "submission-copy-preview", attrs: { "data-submission-copy": "true", readonly: "true", rows: "6", "aria-label": "待复制的投稿内容", hidden: "hidden" } }),
-      node("div", { className: "submission-actions" }, [node("button", { className: "button", text: "复制内容并前往投稿入口", attrs: { type: "submit" } })])
+      node("div", { className: "submission-actions" }, [node("button", { className: "button", text: "复制内容并前往投稿入口", attrs: { type: "submit" } })]),
+      node("a", { className: "button submission-manual-target", text: "打开投稿入口", attrs: { "data-submission-manual-target": "true", target: "_blank", rel: "noopener noreferrer", hidden: "hidden" } }),
+      node("section", { className: "submission-offers", attrs: { "data-submission-offers": "true", hidden: "hidden" } }, [
+        node("p", { text: "请在贴吧粘贴并发送投稿内容。也可以查看整理的购物优惠，以平台实际条件为准。" }),
+        node("a", { className: "button", text: "查看购物优惠", attrs: { href: new URL("offers.html", rootUrl).href, target: "_blank", rel: "noopener noreferrer" } })
+      ])
     );
     form.addEventListener("submit", async (event) => {
       event.preventDefault();
+      const submit = form.querySelector('[type="submit"]');
+      if (submit.disabled) return;
+      submit.disabled = true;
+      const targetUrl = safeUrl(submissionTarget.url);
+      // Reserve the tab during the user gesture; navigate only after copying succeeds.
+      const targetTab = window.open("", "_blank");
+      if (targetTab) targetTab.opener = null;
+      const manualTarget = form.querySelector("[data-submission-manual-target]");
+      const offerPanel = form.querySelector("[data-submission-offers]");
+      offerPanel.hidden = true;
+      manualTarget.hidden = true;
       const values = Object.fromEntries(new FormData(form).entries());
       const lines = [
         "【HiFi 交易事件投稿】",
@@ -201,17 +308,32 @@
         await navigator.clipboard.writeText(text);
         copied = true;
       } catch (_error) {
+        preview.hidden = false;
         preview.focus();
         preview.select();
         try { copied = document.execCommand("copy"); } catch (_fallbackError) { copied = false; }
       }
+      submit.disabled = false;
       if (!copied) {
+        if (targetTab) targetTab.close();
         preview.hidden = false;
         status.textContent = "自动复制失败，请手动复制下方内容后，再点击投稿入口。";
         return;
       }
-      status.textContent = "已复制，正在打开投稿入口…";
-      window.location.href = submissionTarget.url;
+      preview.hidden = true;
+      if (targetTab && !targetTab.closed) {
+        targetTab.location.href = targetUrl;
+        status.textContent = "已复制内容并打开投稿入口，请在贴吧完成发送。";
+        offerPanel.hidden = false;
+      } else {
+        status.textContent = "已复制内容。浏览器未允许自动打开，请点击下方投稿入口。";
+        manualTarget.href = targetUrl;
+        manualTarget.hidden = false;
+      }
+    });
+    form.querySelector("[data-submission-manual-target]").addEventListener("click", () => {
+      form.querySelector("[data-submission-offers]").hidden = false;
+      form.querySelector("[data-submission-status]").textContent = "已请求打开投稿入口，请在贴吧完成发送。";
     });
     submissionDialog.append(form);
     document.body.append(submissionDialog);
@@ -223,6 +345,10 @@
     submissionTarget = entry;
     const form = dialog.querySelector("[data-submission-form]");
     form.reset();
+    form.querySelector('[type="submit"]').disabled = false;
+    form.querySelector("[data-submission-offers]").hidden = true;
+    form.querySelector("[data-submission-manual-target]").hidden = true;
+    form.querySelector("[data-submission-copy]").hidden = true;
     form.querySelector("[data-submission-status]").textContent = `提交后将前往：${entry.label}`;
     form.querySelector("[data-submission-copy]").value = "";
     dialog.showModal();
@@ -246,10 +372,9 @@
         node("span", { className: "tag", text: accountText }),
         ...(event.devices || []).slice(0, 2).map((device) => node("span", { className: "tag", text: device }))
       ]),
-      node("p", { className: "summary", text: event.summary || "尚未填写摘要。" }),
+      node("p", { className: "summary", text: (event.narrative || event.summary || "").slice(0, 180) }),
       node("div", { className: "card-footer" }, [
         node("span", { text: `事件日期 ${formatDate(event.eventDate)}` }),
-        node("span", { text: `现状：${event.currentStatus || "待更新"}` }),
         ...(event.mood && event.mood.url ? [node("span", { className: "mood-note", text: "♫ 附投稿者的心情" })] : [])
       ])
     );
@@ -411,37 +536,27 @@
     const article = node("article", { className: "event-detail" });
     const head = node("header", { className: "detail-head" });
     const kicker = node("div", { className: "detail-kicker" }, [
-      node("span", { className: "tag", text: event.id }),
-      node("span", { className: "tag", text: `更新 ${formatDate(event.updatedAt)}` })
+      node("span", { className: "tag", text: event.id })
     ]);
-    head.append(kicker, node("h1", { text: event.title || "未命名事件" }), node("p", { className: "detail-summary", text: event.summary || "尚未填写摘要。" }));
+    head.append(kicker, node("h1", { text: event.title || "未命名事件" }));
     const facts = node("dl", { className: "detail-facts" });
     const factPairs = [
       ["事件日期", formatDate(event.eventDate)],
-      ["相关设备", event.devices && event.devices.length ? event.devices.join("、") : "未提供"],
-      ["当前情况", event.currentStatus || "待更新"],
-      ["公开状态", event.status === "published" ? "公开展示" : event.status === "withdrawn" ? "已撤下" : "草稿"]
+      ["相关设备", event.devices && event.devices.length ? event.devices.join("、") : "未提供"]
     ];
     factPairs.forEach(([label, value]) => facts.append(node("div", { className: "fact" }, [node("dt", { text: label }), node("dd", { text: value })])));
     head.append(facts);
     article.append(head);
 
-    if (event.correctionNotice) article.append(node("section", { className: "detail-section" }, node("div", { className: "correction" }, [node("strong", { text: "补充或更正说明" }), node("div", { className: "prose" }, node("p", { text: event.correctionNotice }))])));
-    if (event.withdrawalNotice) article.append(node("section", { className: "detail-section" }, node("div", { className: "correction withdrawal" }, [node("strong", { text: "撤回说明" }), node("div", { className: "prose" }, node("p", { text: event.withdrawalNotice }))])));
     const accountSection = renderAccounts(event);
     if (accountSection) article.append(accountSection);
 
     article.append(section("投稿者陈述与经过", node("div", { className: "prose" }, node("p", { text: event.narrative || "尚未提供完整经过。" })), "本区保留投稿者的陈述口径，不与材料事实或网站推断混写"));
-    article.append(section("价格信息", node("div", { className: "price-pair" }, [
-      node("div", {}, [node("small", { text: "挂牌价" }), node("strong", { text: event.listingPrice || "未提供" })]),
-      node("div", {}, [node("small", { text: "实际成交价" }), node("strong", { text: event.transactionPrice || "未提供" })])
-    ]), "挂牌价与实际成交价分开记录"));
 
     const materials = renderMaterials(event, options);
-    const responses = renderTimeline("当事人回应", event.responses, "response");
     const updates = renderTimeline("后续更新", event.updates, "update");
     const mood = renderMood(event);
-    [materials, responses, updates, mood].filter(Boolean).forEach((part) => article.append(part));
+    [materials, updates, mood].filter(Boolean).forEach((part) => article.append(part));
 
     if (!options.preview) {
       const tools = node("div", { className: "media-actions" });
@@ -476,8 +591,13 @@
       const data = await loadSiteData();
       renderSiteMeta(data);
       renderSubmissionActions(data);
-      const events = data.events.filter((event) => event.status === "published").sort((a, b) => a.order - b.order || String(b.updatedAt).localeCompare(String(a.updatedAt)));
+      // JSON insertion order is independent of manual order and incident date.
+      const insertionOrder = new Map(data.events.map((event, index) => [event.id, index]));
+      const events = data.events.filter((event) => event.status === "published");
       const search = document.querySelector("[data-event-search]");
+      const sort = document.querySelector("[data-event-sort]");
+      const initialSort = new URLSearchParams(window.location.search).get("sort");
+      sort.value = ["newest", "oldest", "manual"].includes(initialSort) ? initialSort : "newest";
       const filter = () => {
         const terms = search.value.trim().toLocaleLowerCase().split(/\s+/).filter(Boolean);
         const shown = events.filter((event) => {
@@ -485,6 +605,12 @@
             ...(event.accounts || []).flatMap((account) => [account.displayName, account.platform]),
             ...(event.devices || [])].filter(Boolean).join(" ").toLocaleLowerCase();
           return terms.every((term) => haystack.includes(term));
+        });
+        shown.sort((a, b) => {
+          const age = insertionOrder.get(a.id) - insertionOrder.get(b.id);
+          if (sort.value === "oldest") return age;
+          if (sort.value === "manual") return a.order - b.order || age;
+          return -age;
         });
         list.replaceChildren(...shown.map(renderEventCard));
         list.setAttribute("aria-busy", "false");
@@ -500,6 +626,12 @@
         const url = new URL(window.location.href);
         if (search.value.trim()) url.searchParams.set("q", search.value.trim());
         else url.searchParams.delete("q");
+        history.replaceState(null, "", url);
+        filter();
+      });
+      sort.addEventListener("change", () => {
+        const url = new URL(window.location.href);
+        url.searchParams.set("sort", sort.value);
         history.replaceState(null, "", url);
         filter();
       });
@@ -529,6 +661,12 @@
       const event = data.events.find((item) => item.id === id && item.status === "published");
       if (!event) throw new Error("该事件不存在、尚未公开或已经撤下。返回列表可查看当前公开记录。");
       renderEventDetail(event, container);
+      const thanks = node("section", { className: "event-thanks" });
+      container.append(thanks);
+      try {
+        const contributions = (await loadCollection("contributions")).filter(item => publicContribution(item) && item.eventId === event.id);
+        if (contributions.length) thanks.append(node("h2", { text: "贡献致谢" }), ...contributions.map(item => contributionCard(item, false)));
+      } catch (_error) { thanks.append(node("p", { text: "贡献致谢暂时无法读取。" })); }
       container.setAttribute("aria-busy", "false");
       document.title = `${event.title} · ${data.site.name || "HiFi 交易事件簿"}`;
     } catch (error) {
@@ -542,8 +680,10 @@
     if (event.target.matches("dialog[data-lightbox]")) event.target.close();
   });
 
-  window.HifiSite = { node, safeUrl, assetUrl, formatDate, normalizeData, loadSiteData, parseMedia, renderEventDetail, renderEventCard, renderSiteMeta, renderSubmissionActions };
+  window.HifiSite = { loadCollection, todayInChina, offerVisible, node, safeUrl, assetUrl, formatDate, normalizeData, loadSiteData, parseMedia, renderEventDetail, renderEventCard, renderSiteMeta, renderSubmissionActions };
   initTheme();
   if (page === "home") initHome();
   if (page === "event") initEvent();
+  if (["offers", "contributions"].includes(page)) initCommunity();
 })();
+
