@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="面向贴吧 HiFi 社区的交易事件资料展示站。">
-    <meta name="theme-color" content="#f5faf9" data-theme-color>
+    <meta name="theme-color" content="#fff8f0" data-theme-color>
     <title>HiFi 交易事件簿</title>
     <script>document.documentElement.dataset.theme=localStorage.getItem("hifi-theme")||((matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light");</script>
     <link rel="stylesheet" href="assets/styles.css">
@@ -17,16 +17,21 @@
         <span><strong data-site-name>HiFi 交易事件簿</strong><small>COMMUNITY RECORDS · SIDE A</small></span>
       </a>
       <div class="header-actions">
+        <a class="quiet-link" href="game.html">我要做奸商</a>
         <button class="theme-toggle" type="button" data-theme-toggle aria-label="切换深色模式"><span aria-hidden="true">◐</span><span data-theme-label>深色</span></button>
         <a class="quiet-link" href="editor/">维护者编辑器</a>
       </div>
     </header>
 
+
+    <figure class="visual-bar page-bar-top shell" aria-label="顶部田野横幅">
+      <img src="assets/images/brand/listening-bar-day.webp" alt="戴耳机的女孩走在明亮田野小路上" width="1536" height="512">
+    </figure>
+
     <main>
       <section class="hero shell" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <p class="eyebrow">社区交易记录</p>
-          <h1 id="hero-title" data-site-name>HiFi 交易事件簿</h1>
+          <nav class="page-tabs" aria-label="内容页面"><h1 id="hero-title"><a href="index.html" data-site-name aria-current="page">HiFi 交易事件簿</a></h1><a class="page-tab" href="contributions.html">贡献表</a></nav>
           <p class="lede" data-site-intro>整理社区交易事件的公开陈述与可核对材料。记录不是裁决，请结合原始来源独立判断。</p>
           <p class="updated-line">最近更新 <time data-last-updated>读取中…</time></p>
         </div>
@@ -53,7 +58,10 @@
           <strong>当前仅有虚构演示数据</strong>
           <span>用于检查版式和交互，不对应任何真实账号、交易、投稿或指控。</span>
         </div>
-        <label class="search-field"><span>搜索事件</span><input type="search" data-event-search placeholder="输入账号、设备或经过关键词" autocomplete="off" aria-controls="event-list"></label>
+        <div class="list-controls">
+          <label class="search-field"><span>搜索事件</span><input type="search" data-event-search placeholder="输入账号、设备或经过关键词" autocomplete="off" aria-controls="event-list"></label>
+          <label class="sort-field"><span>排序</span><select data-event-sort aria-controls="event-list"><option value="newest">新案例在前</option><option value="oldest">旧案例在前</option><option value="manual">维护者排序</option></select></label>
+        </div>
         <div id="event-list" class="event-grid" data-event-list aria-busy="true"></div>
         <div class="empty-state" data-empty-state hidden>
           <h3 data-empty-title>暂时没有公开事件</h3>
@@ -62,9 +70,8 @@
         <p class="source-notice" data-source-notice hidden></p>
       </section>
 
-      <figure class="visual-bar shell" aria-label="戴耳机的女孩走在田野小路上的横幅插画">
-        <img src="assets/images/brand/listening-bar-day.webp" alt="戴耳机的女孩走在明亮田野小路上" width="1536" height="512">
-        <figcaption><strong>LISTENING WINDOW</strong><span>让材料保持清晰，也给阅读留一点呼吸。</span></figcaption>
+      <figure class="visual-bar page-bar-bottom shell" aria-label="底部田野横幅">
+        <img src="assets/images/brand/listening-bar-field.webp" alt="戴耳机的女孩站在绿色田野边" width="1536" height="512" loading="lazy">
       </figure>
     </main>
 
