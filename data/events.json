@@ -3,7 +3,7 @@
   "isDemo": false,
   "site": {
     "name": "HiFi 交易事件簿",
-    "intro": "谁是倒狗？到手刀？挂挂挂挂挂挂挂",
+    "intro": "谁是倒狗？到手刀？吧友生万物以养狗，狗无一物报吧友，挂 挂 挂 挂 挂 挂 挂！",
     "sourceNotice": "",
     "lastUpdated": "2026-10-26",
     "submissions": {
@@ -44,7 +44,7 @@
         {
           "type": "link",
           "title": "原始名单文字（待补公开来源）",
-          "description": "依据维护者提供的四页 DOCX 名单整理；文档未附截图、原帖链接或具体水楼楼层。此处仅记录其陈述，尚不能独立核对。",
+          "description": "",
           "path": "",
           "sourceUrl": "",
           "waterPostUrl": ""
@@ -1794,6 +1794,69 @@
       "responses": [],
       "updates": [],
       "currentStatus": "受害者自己吃死猫",
+      "updatedAt": "2026-10-27",
+      "correctionNotice": "",
+      "withdrawalNotice": "",
+      "mood": {
+        "url": "https://www.youtube.com/watch?v=pUR-V-c2J64&list=RDpUR-V-c2J64&start_radio=1",
+        "title": " Yumi Matsuzawa - Daremo Shiranai Chizu de"
+      }
+    },
+    {
+      "id": "event-8c0bef25-d481-4418-963c-d0bab580365a",
+      "status": "published",
+      "order": 460,
+      "title": "累犯、足控倒狗--浅尝辄止（x***4）、基隆元气满满的海棠（l***8）、幂氏黑丝",
+      "accounts": [
+        {
+          "displayName": "浅尝辄止（x***4）",
+          "platform": "",
+          "profileUrl": ""
+        }
+      ],
+      "devices": [],
+      "eventDate": "0026-10-27",
+      "summary": "",
+      "narrative": "倒狗--浅尝辄止（x***4）、基隆元气满满的海棠（l***8）\n\n幂氏黑丝\n\n苦主以 4400 元的打包价格，将 AA24 裸塞、菉竹裸线、Gr09、隼、铜雀三副带线耳塞及四个耳机收纳盒出售给倒狗。\n\n高中牲畜收到商品后，将菉竹裸线及其他三副耳塞、收纳盒拆分转售，已通过闲鱼获得至少 500 元收入，随后又在贴吧以 4300 元的价格单独出售 AA24 裸塞。\n\n按照已知交易金额计算，这位高中牲畜通过出售配件及其他耳塞，已将 AA24 的实际持有成本降至不高于 3900 元。若 AA24 最终以 4300 元成交，则整批商品的转售总收入至少为 4800 元，相较原始购买价产生至少 400 元的毛利润。\n\n\n**目前已知结果：** 其他商品已实现至少 500 元转售收入；AA24 已以 4300 元挂牌，但提供的内容尚未显示其最终成交情况。",
+      "listingPrice": "",
+      "transactionPrice": "",
+      "materials": [
+        {
+          "type": "image",
+          "title": "材料图片",
+          "description": "",
+          "path": "assets/images/events/image-08f7e25f-185b-4e47-88de-17622b270cc0.png",
+          "sourceUrl": "",
+          "waterPostUrl": ""
+        },
+        {
+          "type": "image",
+          "title": "材料图片",
+          "description": "",
+          "path": "assets/images/events/image-5b1de5eb-58d8-42ed-89c5-12a20536c004.png",
+          "sourceUrl": "",
+          "waterPostUrl": ""
+        },
+        {
+          "type": "image",
+          "title": "材料图片",
+          "description": "",
+          "path": "assets/images/events/image-e4eb6be2-2ee8-4fa1-b4b1-d6a9b39583c5.png",
+          "sourceUrl": "",
+          "waterPostUrl": ""
+        },
+        {
+          "type": "image",
+          "title": "材料图片",
+          "description": "",
+          "path": "assets/images/events/image-61fbbbaf-1819-4707-841f-3cced32eabec.png",
+          "sourceUrl": "",
+          "waterPostUrl": ""
+        }
+      ],
+      "responses": [],
+      "updates": [],
+      "currentStatus": "",
       "updatedAt": "2026-10-27",
       "correctionNotice": "",
       "withdrawalNotice": "",
