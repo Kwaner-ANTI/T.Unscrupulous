@@ -1637,6 +1637,167 @@
       "correctionNotice": "",
       "withdrawalNotice": "",
       "mood": null
+    },
+    {
+      "id": "event-20261027-317937",
+      "status": "published",
+      "order": 440,
+      "title": "野狗作坊-节奏坦克-可维修性差+二手拒保",
+      "accounts": [],
+      "devices": [],
+      "eventDate": "2026-10-27",
+      "summary": "新型野狗作坊-节奏坦克，规模本就小，QC堪忧。\n1、顾客寻求合理维修时，傻逼主理以拷打式的态度对待客户\n2、可维护性被ifuxker评为0颗星，疑似为了不作为，机器内部有部分灌胶处理，受害者找第三方维修，发现内部设计也有问题\n3、二手拒保，hapi主理态度坚决",
+      "narrative": "新型野狗作坊-节奏坦克，规模本就小，QC堪忧。\n1、顾客寻求合理维修时，傻逼主理以拷打式的态度对待客户\n2、可维护性被ifuxker评为0颗星，疑似为了不作为，机器内部有部分灌胶处理，受害者找第三方维修，发现内部设计也有问题\n3、二手拒保，hapi主理态度坚决",
+      "listingPrice": "",
+      "transactionPrice": "",
+      "materials": [
+        {
+          "type": "image",
+          "title": "Screenshot 2026-10-27 205204",
+          "description": "",
+          "path": "assets/images/events/event-20261027-317937/screenshot-2026-10-27-205204-f80ebc.png",
+          "sourceUrl": "",
+          "waterPostUrl": ""
+        },
+        {
+          "type": "image",
+          "title": "DOF",
+          "description": "",
+          "path": "assets/images/events/event-20261027-317937/screenshot-2026-10-27-205349-406582.png",
+          "sourceUrl": "",
+          "waterPostUrl": ""
+        },
+        {
+          "type": "image",
+          "title": "DFPORG",
+          "description": "",
+          "path": "assets/images/events/event-20261027-317937/dfporg-774cab.jpg",
+          "sourceUrl": "",
+          "waterPostUrl": ""
+        },
+        {
+          "type": "image",
+          "title": "DOFE",
+          "description": "",
+          "path": "assets/images/events/event-20261027-317937/dofe-ee71be.jpg",
+          "sourceUrl": "",
+          "waterPostUrl": ""
+        },
+        {
+          "type": "image",
+          "title": "DOJVDFE",
+          "description": "",
+          "path": "assets/images/events/event-20261027-317937/dojvdfe-142d53.jpg",
+          "sourceUrl": "",
+          "waterPostUrl": ""
+        },
+        {
+          "type": "image",
+          "title": "DFPORG",
+          "description": "",
+          "path": "assets/images/events/event-20261027-317937/dfporg-514063.jpg",
+          "sourceUrl": "",
+          "waterPostUrl": ""
+        }
+      ],
+      "responses": [
+        {
+          "party": "",
+          "date": "",
+          "statement": "",
+          "sourceUrl": ""
+        }
+      ],
+      "updates": [],
+      "currentStatus": "",
+      "updatedAt": "2026-10-27",
+      "correctionNotice": "",
+      "withdrawalNotice": "",
+      "mood": null
+    },
+    {
+      "id": "event-20261027-ea1241",
+      "status": "published",
+      "order": 450,
+      "title": "隐瞒坏逼-数码hifi置换铺",
+      "accounts": [
+        {
+          "displayName": "数码hifi置换铺",
+          "platform": "闲鱼",
+          "profileUrl": ""
+        }
+      ],
+      "devices": [],
+      "eventDate": "0026-10-26",
+      "summary": "隐瞒坏逼-数码hifi置换铺，隐瞒播放器滚轮问题、电池问题",
+      "narrative": "买家于9月向一名闲鱼商家购入艾巴索 DX260MK2 播放器，收货拍摄开箱视频时发现滚轮左右晃动明显，与同期向官方取得的全新试听机存在明显差异。商家起初称这是“出厂通病”，直到买家向官方客服咨询、转发维修报价后，才承认异常并支付100元维修费。买家未再追究，但当时已察觉设备耗电偏快。\n\n10月25日，播放器出现电量异常：充电至78%后，息屏便骤降至38%。买家再次联系商家，对方以“开箱时未发现，就不是自己的问题”为由拒绝负责，随后不再回复。截至发帖时，电池问题仍未解决。\n\n商品介绍将滚轮描述为“功能正常”，未提及电池问题，最后发现同轴线也少一条。",
+      "listingPrice": "",
+      "transactionPrice": "",
+      "materials": [
+        {
+          "type": "image",
+          "title": "SDKWF",
+          "description": "",
+          "path": "assets/images/events/event-20261027-ea1241/sdkwf-e54e03.jpg",
+          "sourceUrl": "",
+          "waterPostUrl": ""
+        },
+        {
+          "type": "image",
+          "title": "SDKJVED",
+          "description": "",
+          "path": "assets/images/events/event-20261027-ea1241/sdkjved-b538c9.jpg",
+          "sourceUrl": "",
+          "waterPostUrl": ""
+        },
+        {
+          "type": "image",
+          "title": "SEOIVEV",
+          "description": "",
+          "path": "assets/images/events/event-20261027-ea1241/seoivev-6c9f89.jpg",
+          "sourceUrl": "",
+          "waterPostUrl": ""
+        },
+        {
+          "type": "image",
+          "title": "SJDIDWFC",
+          "description": "",
+          "path": "assets/images/events/event-20261027-ea1241/sjdidwfc-017a1d.jpg",
+          "sourceUrl": "",
+          "waterPostUrl": ""
+        },
+        {
+          "type": "image",
+          "title": "SJKDJDKW",
+          "description": "",
+          "path": "assets/images/events/event-20261027-ea1241/sjkdjdkw-5c7e53.jpg",
+          "sourceUrl": "",
+          "waterPostUrl": ""
+        },
+        {
+          "type": "image",
+          "title": "SJKFECS",
+          "description": "",
+          "path": "assets/images/events/event-20261027-ea1241/sjkfecs-cba4fb.jpg",
+          "sourceUrl": "",
+          "waterPostUrl": ""
+        },
+        {
+          "type": "image",
+          "title": "SKDOWPERF",
+          "description": "",
+          "path": "assets/images/events/event-20261027-ea1241/skdowperf-caa95a.jpg",
+          "sourceUrl": "",
+          "waterPostUrl": ""
+        }
+      ],
+      "responses": [],
+      "updates": [],
+      "currentStatus": "受害者自己吃死猫",
+      "updatedAt": "2026-10-27",
+      "correctionNotice": "",
+      "withdrawalNotice": "",
+      "mood": null
     }
   ]
 }
